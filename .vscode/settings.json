@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.port": 5502,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.https": {
+      "enable": true,
+      "cert": "/Users/Max/Documents/99 - Misc/6 - Github/sites/tucared.github.io/https/myCA.pem",
+      "key": "/Users/Max/Documents/99 - Misc/6 - Github/sites/tucared.github.io/https/myCA.key",
+      "passphrase": "2108"
+    }
+  }
