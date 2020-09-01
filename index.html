@@ -27,22 +27,25 @@
       ev.preventDefault();
     });
 
-    
+
   </script>
 </head>
 
 <body>
-  <h1>Here is the beautiful TCC!</h1>
-  <nav>
-  </nav>
-  <main>
-    <!-- Teatro by tucared -->
-    <model-viewer
-      src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/03qIAOC4oOn/Volumetria%20R15.gltf"
-      ios-src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/69NB8IUq0DG/Volumetria%20R15.usdz"
-      alt="Teatro by Max Perdrigeat" background-color="#121212" camera-controls ar auto-rotate
-      ar-modes="webxr scene-viewer quick-look"> </model-viewer>
-  </main>
+  <div id="container">
+    <div id="section-presentation">
+      <h1 id="title">Teatro e Centro de Dança</h1>
+      <nav id="description">
+      </nav>
+    </div>
+    <main id="section-viewer">
+      <model-viewer
+        src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/03qIAOC4oOn/Volumetria%20R15.gltf"
+        ios-src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/69NB8IUq0DG/Volumetria%20R15.usdz"
+        alt="Teatro by Max Perdrigeat" background-color="#BD6942" camera-controls ar auto-rotate
+        ar-modes="webxr scene-viewer quick-look"> </model-viewer>
+    </main>
+  </div>
 </body>
 
 </html>
