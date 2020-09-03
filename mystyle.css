@@ -48,6 +48,7 @@ table {
 body {
     height: 100vh;
     width: 100vw;
+    min-height: -webkit-fill-available;
 }
 
 #container {
@@ -153,27 +154,27 @@ button[slot="bloco-01"] {
 
 /** 
  * iPad with portrait orientation.
- */
+ 
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
     body {
         height: 1024px;
     }
 }
-
-/* iPad with landscape orientation. */
+*/
+/* iPad with landscape orientation. 
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
     body {
         height: 768px;
     }
-}
+}*/
 
 /* iPhone 5 
-You can also target devices with aspect ratio. */
+You can also target devices with aspect ratio. 
 
 @media screen and (device-aspect-ratio: 40/71) {
     body {
         height: 500px;
     }
-}
+}*/
