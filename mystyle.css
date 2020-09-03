@@ -38,7 +38,7 @@ table {
 /* Website specific styling */
 
 @font-face {
-    font-family: "sauvage";
+    font-family: sauvage;
     src: url("./assets/font/Sauvage-Regular.ttf") format("truetype"),
     url("./assets/font/Sauvage-Regular.woff") format("woff");
 }
@@ -75,7 +75,7 @@ h1 {
     font-size: 43px;
     line-height: 64px;
     padding: 0.05px 0;
-    font-family: "sauvage", serif;
+    font-family: sauvage, serif;
 }
 
 h1::before {
