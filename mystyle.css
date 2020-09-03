@@ -38,11 +38,13 @@ table {
 /* Website specific styling */
 
 @font-face {
-    font-family: sauvage;
-    src: url("./assets/font/Sauvage-Regular.ttf") format("truetype"),
-    url("./assets/font/Sauvage-Regular.woff") format("woff");
-}
+    font-family: 'sauvageregular';
+    src: url('./assets/font/sauvage-regular-webfont.woff2') format('woff2'),
+         url('./assets/font/sauvage-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 body {
     height: 100vh;
     width: 100vw;
@@ -75,7 +77,7 @@ h1 {
     font-size: 43px;
     line-height: 64px;
     padding: 0.05px 0;
-    font-family: sauvage, serif;
+    font-family: sauvageregular, serif;
 }
 
 h1::before {
