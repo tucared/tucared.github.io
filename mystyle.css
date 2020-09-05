@@ -165,50 +165,46 @@ button[slot="bloco-01"] {
     }
 }
 
-/* Mobile */
+/* Most mobile */
 
 @media (max-width: 480px) {
     #container {
         flex-direction: column;
-        font-size: 50px;
+        font-size: 60px;
     }
     #section-presentation {
         flex: 0 0 auto;
     }
     #sidebar {
         order: 99;
-        flex-basis: 30px;
+        flex-basis: 75px;
     }
     #badge {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
 }
 
-/** 
- * iPad with portrait orientation.
- 
+/* iPad with portrait orientation. */
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
     body {
         height: 1024px;
     }
 }
-*/
 
-/* iPad with landscape orientation. 
+/* iPad with landscape orientation. */
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
     body {
         height: 768px;
     }
-}*/
+}
 
-/* iPhone 5 
-You can also target devices with aspect ratio. 
+/* iPhone 5 */
 
 @media screen and (device-aspect-ratio: 40/71) {
     body {
         height: 500px;
     }
-}*/
+}
