@@ -59,7 +59,6 @@ body {
 
 #section-presentation {
     background-color: white;
-    border-right: 1px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -88,7 +87,27 @@ body {
     height: 0;
 }
 
-#description {}
+#sidebar {
+    flex: 0 0 85px;
+    display: grid;
+    place-items: center;
+}
+
+#badge {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 100%;
+    width:60px;
+    height: 60px;
+    position:relative;
+    font-size: .2em;
+    font-family: sauvageregular, serif;
+    text-align: center;
+    text-justify: center;
+    display: grid;
+    place-items: center;
+}
+
 
 #section-viewer {
     flex: 1 1 60%;
@@ -152,6 +171,11 @@ button[slot="bloco-01"] {
     }
     #section-presentation {
         flex: 0 0 auto;
+    }
+
+    #sidebar {
+        order: 99;
+        flex-basis: 30px;
     }
 }
 
