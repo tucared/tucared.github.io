@@ -39,8 +39,10 @@ table {
 
 @font-face {
     font-family: 'sauvageregular';
-    src: url('./assets/font/sauvage-regular-webfont.woff2') format('woff2'),
-         url('./assets/font/sauvage-regular-webfont.woff') format('woff');
+    src: url('./assets/font/Sauvage-Regular.woff2') format('woff2'),
+         url('./assets/font/Sauvage-Regular.woff') format('woff'),
+         url('./assets/font/Sauvage-Regular.otf') format('otf'),
+         url('./assets/font/Sauvage-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
