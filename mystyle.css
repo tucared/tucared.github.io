@@ -69,28 +69,22 @@ body {
 
 #title {
     padding: 15px;
-    line-height: 1;
     flex: 0 0 30px;
-    font-weight: 700;
     text-align: center;
-    font-size: 1.5em;
-}
-
-h1 {
-    font-size: 43px;
     line-height: 64px;
-    padding: 0.05px 0;
     font-family: sauvageregular, serif;
+    font-weight: 700;
+    font-size: 43px;
 }
 
-h1::before {
+#title::before {
     content: "";
     margin-top: -0.2453em;
     display: block;
     height: 0;
 }
 
-h1::after {
+#title::after {
     content: "";
     margin-bottom: -0.2453em;
     display: block;
