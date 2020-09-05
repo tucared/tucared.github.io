@@ -45,7 +45,8 @@ table {
 }
 
 body {
-    height: 100vh;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
     min-height: -webkit-fill-available;
 }
@@ -182,29 +183,5 @@ button[slot="bloco-01"] {
     #badge {
         width: 50px;
         height: 50px;
-    }
-}
-
-/* iPad with portrait orientation. */
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    body {
-        height: 1024px;
-    }
-}
-
-/* iPad with landscape orientation. */
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
-    body {
-        height: 768px;
-    }
-}
-
-/* iPhone 5 */
-
-@media screen and (device-aspect-ratio: 40/71) {
-    body {
-        height: 500px;
     }
 }

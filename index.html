@@ -10,6 +10,19 @@
   </script>
   <script nomodule src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js">
   </script>
+  <script>
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
 </head>
 
 <body>
@@ -26,8 +39,8 @@
       <model-viewer
         src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/03qIAOC4oOn/Volumetria%20R15.gltf"
         ios-src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/69NB8IUq0DG/Volumetria%20R15.usdz"
-        alt="Teatro by Max Perdrigeat" background-color="white" camera-controls
-        ar auto-rotate ar-modes="webxr scene-viewer quick-look">
+        alt="Teatro by Max Perdrigeat" background-color="white" camera-controls ar auto-rotate
+        ar-modes="webxr scene-viewer quick-look">
         <button slot="bloco-01" data-position="0.5 0.5 0.5" data-normal="-0.73 0.05 0.69">
           <div id="annotation">This hotspot disappears completely</div>
         </button></model-viewer>
