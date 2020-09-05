@@ -39,10 +39,7 @@ table {
 
 @font-face {
     font-family: 'sauvageregular';
-    src: url('./assets/font/Sauvage-Regular.woff2') format('woff2'),
-         url('./assets/font/Sauvage-Regular.woff') format('woff'),
-         url('./assets/font/Sauvage-Regular.otf') format('otf'),
-         url('./assets/font/Sauvage-Regular.ttf') format('ttf');
+    src: url('./assets/font/Sauvage-Regular.woff2') format('woff2'), url('./assets/font/Sauvage-Regular.woff') format('woff'), url('./assets/font/Sauvage-Regular.otf') format('otf'), url('./assets/font/Sauvage-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -63,19 +60,18 @@ body {
 #section-presentation {
     background-color: white;
     border-right: 1px solid black;
-    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
 }
 
 #title {
     padding: 15px;
-    flex: 0 0 150px;
+    flex: 0 0 20%;
     text-align: center;
     line-height: 64px;
     font-family: sauvageregular, serif;
     font-weight: 500;
-    font-size: 100px;
+    font-size: 1em;
 }
 
 #title::before {
@@ -133,14 +129,29 @@ button[slot="bloco-01"] {
     display: none;
 }
 
+/* Desktop*/
+
 @media (min-width: 480px) {
     #container {
         flex-direction: row;
+        font-size:100px;
     }
+    
     #section-presentation {
         flex: 0 0 480px;
         display: flex;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    #container {
         flex-direction: column;
+        font-size: 30px;
+    }
+    #section-presentation {
+        flex: 0 0 auto;
     }
 }
 
@@ -154,6 +165,7 @@ button[slot="bloco-01"] {
     }
 }
 */
+
 /* iPad with landscape orientation. 
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
