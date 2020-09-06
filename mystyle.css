@@ -20,12 +20,15 @@ body {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
+    font-size: 100%;
     display: flex;
 }
 
 nav {
+    margin: 10px;
     display: grid;
     place-items: center;
+    flex: initial;
 }
 
 main {
@@ -44,24 +47,24 @@ main {
 }
 
 #title {
-    padding: 15px;
-    flex: 0 0 auto;
+    flex: none;
     text-align: center;
     font-family: sauvageregular, serif;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 6em;
+    text-overflow: ellipsis; 
 }
 
 #title::before {
     content: "";
-    margin-top: .4em;
+    margin-top: .3em;
     display: block;
     height: 0;
 }
 
 #title::after {
     content: "";
-    margin-bottom: -0.2453em;
+    margin-bottom: -0.3m;
     display: block;
     height: 0;
 }
@@ -70,7 +73,6 @@ main {
     border: 3px solid black;
     border-radius: 100%;
     position: relative;
-    font-size: .2em;
     font-family: sauvageregular, serif;
     text-align: center;
     text-justify: center;
@@ -78,8 +80,6 @@ main {
     place-items: center;
     font-weight: 700;
 }
-
-
 
 model-viewer {
     width: 100%;
@@ -89,21 +89,14 @@ model-viewer {
 /* Desktop*/
 
 @media (min-width: 480px) {
-    body {
-        font-size: 100px;
-    }
-    nav {
-        flex-basis: 85px;
-    }
     #presentation {
         flex: 1 1 200px;
-    width: 400px;
+        width: 400px;
     }
     #badge {
         width: 60px;
         height: 60px;
     }
-
 }
 
 /* Mobile */
@@ -111,11 +104,9 @@ model-viewer {
 @media (max-width: 480px) {
     body {
         flex-direction: column;
-        font-size: 60px;
     }
     nav {
         order: 99;
-        flex-basis: 75px;
     }
     main {
         flex-direction: column;
