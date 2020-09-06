@@ -59,7 +59,7 @@ body {
     place-items: center;
 }
 
-#sidebar-badge {
+#badge {
     background-color: white;
     border: 3px solid black;
     border-radius: 100%;
@@ -106,7 +106,7 @@ model-viewer {
     #sidebar {
         flex-basis: 85px;
     }
-    #sidebar-badge {
+    #badge {
         width: 60px;
         height: 60px;
     }
@@ -126,7 +126,7 @@ model-viewer {
         order: 99;
         flex-basis: 75px;
     }
-    #sidebar-badge {
+    #badge {
         width: 50px;
         height: 50px;
     }
