@@ -20,15 +20,27 @@ body {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
+    display: flex;
 }
 
-body {
+nav {
+    display: grid;
+    place-items: center;
+}
+
+main {
+    flex: auto;
     display: flex;
 }
 
 #presentation {
     display: flex;
     flex-direction: column;
+    flex: initial;
+}
+
+#viewer {
+    flex: auto;
 }
 
 #title {
@@ -54,13 +66,7 @@ body {
     height: 0;
 }
 
-nav {
-    display: grid;
-    place-items: center;
-}
-
 #badge {
-    background-color: white;
     border: 3px solid black;
     border-radius: 100%;
     position: relative;
@@ -73,58 +79,49 @@ nav {
     font-weight: 700;
 }
 
-main {
-    flex: 1 1 auto;
-    display: flex;
-}
 
-#viewer {
-    flex: 1 1 60%;
-}
 
 model-viewer {
     width: 100%;
     height: 100%;
 }
 
-/* This keeps child nodes hidden while the element loads */
-
-:not(:defined)>* {
-    display: none;
-}
-
 /* Desktop*/
 
 @media (min-width: 480px) {
     body {
-        flex-direction: row;
         font-size: 100px;
-    }
-    #presentation {
-        flex: 0 0 40%;
     }
     nav {
         flex-basis: 85px;
+    }
+    #presentation {
+        flex: 1 1 200px;
+    width: 400px;
     }
     #badge {
         width: 60px;
         height: 60px;
     }
+
 }
 
-/* Most mobile */
+/* Mobile */
 
 @media (max-width: 480px) {
     body {
         flex-direction: column;
         font-size: 60px;
     }
-    #presentation {
-        flex: 0 0 auto;
-    }
     nav {
         order: 99;
         flex-basis: 75px;
+    }
+    main {
+        flex-direction: column;
+    }
+    #presentation {
+        flex: 0 0 auto;
     }
     #badge {
         width: 50px;
