@@ -27,16 +27,14 @@ body {
 }
 
 #section-presentation {
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
 
 #title {
     padding: 15px;
-    flex: 0 0 20%;
+    flex: 0 0 auto;
     text-align: center;
-    line-height: 64px;
     font-family: sauvageregular, serif;
     font-weight: 500;
     font-size: 1em;
@@ -75,9 +73,13 @@ body {
     font-weight: 700;
 }
 
+main {
+    flex: 1 1 auto;
+    display: flex;
+}
+
 #section-viewer {
     flex: 1 1 60%;
-    outline: white;
 }
 
 model-viewer {
@@ -123,7 +125,6 @@ button[slot="bloco-01"] {
     }
     #section-presentation {
         flex: 0 0 40%;
-        display: flex;
     }
     #sidebar {
         flex-basis: 85px;
@@ -153,8 +154,6 @@ button[slot="bloco-01"] {
         height: 50px;
     }
 }
-
-
 
 /* HTML5 display-role reset for older browsers */
 
