@@ -46,6 +46,18 @@ main {
     flex: auto;
 }
 
+#badge {
+    border: 3px solid black;
+    border-radius: 100%;
+    position: relative;
+    font-family: sauvageregular, serif;
+    text-align: center;
+    text-justify: center;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+}
+
 #title {
     flex: none;
     text-align: center;
@@ -69,16 +81,11 @@ main {
     height: 0;
 }
 
-#badge {
-    border: 3px solid black;
-    border-radius: 100%;
-    position: relative;
-    font-family: sauvageregular, serif;
-    text-align: center;
-    text-justify: center;
-    display: grid;
-    place-items: center;
-    font-weight: 700;
+.description {
+    flex:initial;
+    padding: 20px 30px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 model-viewer {
