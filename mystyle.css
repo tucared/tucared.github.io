@@ -26,7 +26,7 @@ body {
     display: flex;
 }
 
-#section-presentation {
+#presentation {
     display: flex;
     flex-direction: column;
 }
@@ -100,7 +100,7 @@ model-viewer {
         flex-direction: row;
         font-size: 100px;
     }
-    #section-presentation {
+    #presentation {
         flex: 0 0 40%;
     }
     #sidebar {
@@ -119,7 +119,7 @@ model-viewer {
         flex-direction: column;
         font-size: 60px;
     }
-    #section-presentation {
+    #presentation {
         flex: 0 0 auto;
     }
     #sidebar {
