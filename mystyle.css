@@ -14,6 +14,10 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     font-style: normal;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,6 +28,22 @@ body {
     display: flex;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+main {
+    width: 100%;
+    height: 100;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
 nav {
     margin: 10px;
     display: grid;
@@ -31,23 +51,26 @@ nav {
     flex: initial;
 }
 
-main {
+section {
+    height: 100%;
+    width: 100%;
     flex: auto;
     display: flex;
+    scroll-snap-align: start;
 }
 
-#presentation {
+.presentation {
     flex: initial;
     display: flex;
     flex-direction: column;
 }
 
-#viewer {
+.viewer {
     flex: auto;
 }
 
 #badge {
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 100%;
     position: relative;
     font-family: sauvageregular, serif;
@@ -58,7 +81,7 @@ main {
     font-weight: 700;
 }
 
-#title {
+.title {
     flex: none;
     text-align: center;
     font-family: sauvageregular, serif;
@@ -68,14 +91,14 @@ main {
     font-variant-ligatures: discretionary-ligatures;
 }
 
-#title::before {
+.title::before {
     content: "";
     margin-top: .3em;
     display: block;
     height: 0;
 }
 
-#title::after {
+.title::after {
     content: "";
     margin-bottom: -0.3m;
     display: block;
@@ -86,6 +109,7 @@ main {
     flex: initial;
     padding: 20px 30px;
     font-size: 1.1em;
+    line-height: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -97,8 +121,11 @@ model-viewer {
 /* Desktop*/
 
 @media (min-width: 480px) {
-    #presentation {
-        flex-basis: 560px;
+    nav {
+        height:100%;
+    }
+    .presentation {
+        flex-basis: 600px;
         width: 400px;
     }
     #badge {
@@ -116,7 +143,7 @@ model-viewer {
     nav {
         order: 99;
     }
-    main {
+    section {
         flex-direction: column;
     }
     #badge {
