@@ -58,15 +58,14 @@ section {
 
 #badge {
     margin: 10px;
-    border: .5px solid black;
-    border-radius: 100%;
-    position: relative;
-    font-family: sauvageregular, serif;
-    text-align: center;
-    text-justify: center;
     display: grid;
     place-items: center;
     font-weight: 700;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
 }
 
 .title {
