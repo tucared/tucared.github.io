@@ -57,7 +57,6 @@ section {
 }
 
 #badge {
-    margin: 10px;
     display: grid;
     place-items: center;
     font-weight: 700;
@@ -76,21 +75,21 @@ section {
     text-align: center;
     font-family: sauvageregular, serif;
     font-weight: 500;
-    font-size: 6em;
+    font-size: 5em;
     text-transform: uppercase;
     font-variant-ligatures: discretionary-ligatures;
 }
 
 .title h1::before {
     content: "";
-    margin-top: .3em;
+    margin-top: .4em;
     display: block;
     height: 0;
 }
 
 .title h1::after {
     content: "";
-    margin-bottom: -0.3m;
+    margin-bottom: .2em;
     display: block;
     height: 0;
 }
@@ -103,7 +102,7 @@ section {
 .description p {
     padding: 20px 30px;
     font-size: 1.1em;
-    line-height: 2rem;
+    line-height: 1.7rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -138,8 +137,9 @@ model-viewer {
         width: 400px;
     }
     #badge {
-        width: 60px;
-        height: 60px;
+        width: 65px;
+        height: 65px;
+        margin: 20px;
     }
 }
 
@@ -148,6 +148,7 @@ model-viewer {
 @media (max-width: 480px) {
     body {
         flex-direction: column;
+        font-size: 14px;
     }
     nav {
         order: 99;
@@ -161,8 +162,14 @@ model-viewer {
     .description {
         height: 200px;
     }
+    .description.emphasis {
+        font-size: 1.5em;
+        line-height: 20px;
+        height: 50px;
+    }
     #badge {
         width: 50px;
         height: 50px;
+        margin: 15px;
     }
 }
