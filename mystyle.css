@@ -33,17 +33,17 @@ main {
 }
 
 nav {
+    flex: initial;
     display: grid;
     place-items: center;
-    flex: initial;
 }
 
 section {
     height: 100%;
     width: 100%;
     flex: auto;
-    display: flex;
     scroll-snap-align: start;
+    display: flex;
 }
 
 .presentation {
@@ -71,6 +71,9 @@ section {
 
 .title {
     flex: none;
+}
+
+.title h1 {
     text-align: center;
     font-family: sauvageregular, serif;
     font-weight: 500;
@@ -79,14 +82,14 @@ section {
     font-variant-ligatures: discretionary-ligatures;
 }
 
-.title::before {
+.title h1::before {
     content: "";
     margin-top: .3em;
     display: block;
     height: 0;
 }
 
-.title::after {
+.title h1::after {
     content: "";
     margin-bottom: -0.3m;
     display: block;
@@ -95,6 +98,10 @@ section {
 
 .description {
     flex: initial;
+    overflow-y: auto;
+}
+
+.description p {
     padding: 20px 30px;
     font-size: 1.1em;
     line-height: 2rem;
@@ -102,10 +109,13 @@ section {
 }
 
 .description.emphasis {
+    padding: 0;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.2em;
     text-transform: uppercase;
     text-align: center;
+    line-height: 40px;
+    overflow-y: visible;
 }
 
 model-viewer {
