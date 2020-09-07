@@ -142,7 +142,7 @@ model-viewer {
         margin: 20px;
     }
     #landing img {
-        width: 50%;
+        width: 500px;
     }
 }
 
@@ -176,7 +176,6 @@ model-viewer {
         margin: 15px;
     }
     #landing img {
-        width: 80%;
-        padding: 0 20px;
+        width: 300px;
     }
 }
