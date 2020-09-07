@@ -101,6 +101,13 @@ section {
     font-family: 'Montserrat', sans-serif;
 }
 
+.description.emphasis {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 model-viewer {
     width: 100%;
     height: 100%;
