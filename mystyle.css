@@ -121,9 +121,9 @@ model-viewer {
     height: 100%;
 }
 
-#landing img {
-    width: 100%;
-    height: 100%;
+#landing {
+    display: grid;
+    place-items: center;
 }
 
 /* Desktop*/
@@ -140,6 +140,9 @@ model-viewer {
         width: 65px;
         height: 65px;
         margin: 20px;
+    }
+    #landing img {
+        width: 50%;
     }
 }
 
@@ -171,5 +174,9 @@ model-viewer {
         width: 50px;
         height: 50px;
         margin: 15px;
+    }
+    #landing img {
+        width: 80%;
+        padding: 0 20px;
     }
 }
