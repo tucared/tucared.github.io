@@ -60,10 +60,11 @@ a {
     background-color: #FFF;
 }
 
-#table_of-content {
+#table-of-content {
     padding: 0 18px;
     display: flex;
     overflow: hidden;
+    white-space:nowrap;
     font-family: sauvageregular, serif;
     list-style-type:none;
 }
