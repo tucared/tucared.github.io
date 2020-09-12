@@ -39,24 +39,27 @@ nav {
 }
 
 .collapsible {
+    background-color: white;
     cursor: pointer;
     padding: 10px;
     width: 100%;
     height: 100%;
     border: none;
     outline: none;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
 }
 
 .active, .collapsible:hover {
-    background-color: #555;
+    background-color: #FFF;
 }
 
 #table_of-content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
-  }
+}
 
 section {
     height: 100%;
@@ -74,12 +77,6 @@ section {
 
 .viewer {
     flex: auto;
-}
-
-#badge {
-    display: grid;
-    place-items: center;
-    font-weight: 700;
 }
 
 #logo {
@@ -156,7 +153,7 @@ model-viewer {
         flex-basis: 600px;
         width: 400px;
     }
-    #badge {
+    #logo {
         width: 65px;
         height: 65px;
         margin: 20px;
@@ -190,7 +187,7 @@ model-viewer {
         line-height: 20px;
         height: 50px;
     }
-    #badge {
+    #logo     {
         width: 50px;
         height: 50px;
         margin: 15px;
