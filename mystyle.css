@@ -62,7 +62,7 @@ a {
 
 #table-of-content {
     padding: 0 18px;
-    display: flex;
+    display: none;
     overflow: hidden;
     white-space:nowrap;
     font-family: sauvageregular, serif;
