@@ -138,7 +138,7 @@ model-viewer {
     height: 100%;
 }
 
-#landing {
+#titulo {
     display: grid;
     place-items: center;
 }
@@ -158,7 +158,7 @@ model-viewer {
         height: 65px;
         margin: 20px;
     }
-    #landing img {
+    #titulo img {
         width: 500px;
     }
 }
@@ -192,7 +192,7 @@ model-viewer {
         height: 50px;
         margin: 15px;
     }
-    #landing img {
+    #titulo img {
         width: 300px;
     }
 }
