@@ -343,8 +343,14 @@
 
 <body>
   <nav>
-    <div id="badge">
-      <img id="logo" src="./assets/logo.svg" alt="website logo">
+    <button type="button" class="collapsible">
+      <div id="badge">
+        <img id="logo" src="./assets/logo.svg" alt="website logo">
+      </div>
+    </button>
+    <div id="table_of-content">
+      <li>epílogo</il>
+      <li>o projeto</il>
     </div>
   </nav>
   <main>
@@ -380,8 +386,8 @@
         <model-viewer
           src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/03qIAOC4oOn/Volumetria%20R15.gltf"
           ios-src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/69NB8IUq0DG/Volumetria%20R15.usdz"
-          alt="Teatro Hipercentral" quick-look-browsers="safari chrome" interaction-policy="allow-when-focused" camera-controls ar
-          auto-rotate>
+          alt="Teatro Hipercentral" quick-look-browsers="safari chrome" interaction-policy="allow-when-focused"
+          camera-controls ar auto-rotate>
         </model-viewer>
       </div>
     </section>
@@ -416,12 +422,28 @@
         <model-viewer
           src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/03qIAOC4oOn/Volumetria%20R15.gltf"
           ios-src="https://poly.googleusercontent.com/downloads/c/fp/1598520558272740/1La3tGI0_K7/69NB8IUq0DG/Volumetria%20R15.usdz"
-          alt="Teatro Hipercentral" quick-look-browsers="safari chrome" interaction-policy="allow-when-focused" camera-controls ar
-          auto-rotate>
+          alt="Teatro Hipercentral" quick-look-browsers="safari chrome" interaction-policy="allow-when-focused"
+          camera-controls ar auto-rotate>
         </model-viewer>
       </div>
     </section>
   </main>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
