@@ -33,7 +33,6 @@ main {
 }
 
 nav {
-    flex: initial;
     display: grid;
     place-items: center;
 }
@@ -44,20 +43,19 @@ a {
 }
 
 .collapsible {
-    background-color: white;
+    position: fixed;
+    background-color: transparent;
     cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
+    padding: 0;
     border: none;
     outline: none;
     display: grid;
     place-items: center;
     font-weight: 700;
+    z-index: 999;
 }
 
 .active, .collapsible:hover {
-    background-color: #FFF;
 }
 
 #table-of-content {
@@ -90,11 +88,6 @@ section {
 
 .viewer {
     flex: auto;
-}
-
-#logo {
-    height: 100%;
-    width: 100%;
 }
 
 .title {
