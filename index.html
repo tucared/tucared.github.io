@@ -346,18 +346,13 @@
 <body>
   <nav>
     <button type="button" class="collapsible">
-      <img id="logo" src="./assets/logo.svg" alt="website logo">
+      <img id="logo" src="./assets/logo.svg" alt="website logo" onclick="openNav()">
     </button>
-    <div id="table-of-content">
-      <li class="link">
-        <a href="#titulo">titulo</a>
-        </il>
-      <li class="link">
-        <a href="#epílogo">epílogo</a>
-        </il>
-      <li class="link">
-        <a href="#projeto">o projeto</a>
-        </il>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#titulo">titulo</a>
+      <a href="#epílogo">epílogo</a>
+      <a href="#projeto">o projeto</a>
     </div>
   </nav>
   <main>
@@ -436,19 +431,12 @@
     </section>
   </main>
   <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
     }
   </script>
   <script>
