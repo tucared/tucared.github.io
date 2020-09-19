@@ -59,7 +59,8 @@ a {
 }
 
 #table-of-content {
-    padding: 0 18px;
+    position: fixed;
+    padding: 100px 18px;
     display: none;
     overflow: hidden;
     white-space:nowrap;
