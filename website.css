@@ -73,7 +73,7 @@ section {
 }
 
 #landing-logo {
-    width: 40vw;
+    width: calc(330px + 30vw);
 }
 
 .collapsible {
