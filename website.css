@@ -65,6 +65,8 @@ section {
     background: transparent;
 }
 
+/* || LANDING PAGE */
+
 #landing {
     height: 100%;
     width: 100%;
@@ -75,6 +77,8 @@ section {
 #title-logo {
     width: calc(330px + 30vw);
 }
+
+/* || SIDEBAR MENU */
 
 .collapsible {
     position: fixed;
@@ -132,6 +136,8 @@ section {
     color: #f1f1f1;
 }
 
+/* || SECTION STYLING */
+
 .title {
     flex: none;
 }
@@ -186,7 +192,7 @@ model-viewer {
     height: 100%;
 }
 
-/* Desktop*/
+/* || DESKTOP SPECIFIC */
 
 @media (min-width: 480px) {
     .presentation {
@@ -207,7 +213,7 @@ model-viewer {
     }
 }
 
-/* Mobile */
+/* || MOBILE SPECIFIC */
 
 @media (max-width: 480px) {
     body {
