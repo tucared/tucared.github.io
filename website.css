@@ -76,7 +76,19 @@ section {
 
 #title-logo {
     width: calc(330px + 30vw);
+    animation: fadeInAnimation linear 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
 
 /* || SIDEBAR MENU */
 
