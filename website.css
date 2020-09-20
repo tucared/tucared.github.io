@@ -227,9 +227,6 @@ model-viewer {
         height: 65px;
         margin: 20px;
     }
-    #titulo img {
-        width: 500px;
-    }
     .sidenav a {
         padding: 10px;
         font-size: 2em;
@@ -262,9 +259,8 @@ model-viewer {
         height: 50px;
         margin: 15px;
     }
-    #titulo img {
-        width: 300px;
-    }
+    #title-logo {
+        width: calc(150px + 30vw);}
     .sidenav a {
         padding: 5px;
         font-size: 2em;
