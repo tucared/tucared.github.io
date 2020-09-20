@@ -60,13 +60,20 @@ section {
     flex: auto;
 }
 
-#landing-logo {
-    width: 60%;
-}
-
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
+}
+
+#landing {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#landing-logo {
+    width: 40vw;
 }
 
 .collapsible {
