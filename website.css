@@ -72,7 +72,7 @@ section {
     place-items: center;
 }
 
-#landing-logo {
+#title-logo {
     width: calc(330px + 30vw);
 }
 
