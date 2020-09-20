@@ -3,131 +3,142 @@
 
 <head>
 
-  <link rel="stylesheet" type="text/css" href="./website.css">
-  <link rel="icon" type="image/svg" href="./assets/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./website.css">
+    <link rel="icon" type="image/svg" href="./assets/favicon.svg">
 
-  <title>Teatro & Centro de Dança</title>
+    <title>Teatro & Centro de Dança</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="author" content="Clarissa Aburachid Rocha">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Clarissa Aburachid Rocha">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-  </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style>
 
-  <script src="assets/scrollbar/simple-scrollbar.min.js"></script>
-  <script src="/scripts/window-sizing.js"></script>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-  <script src="/scripts/polyfill.js"></script>
+    <script src="assets/scrollbar/simple-scrollbar.min.js"></script>
+    <script src="/scripts/window-sizing.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="/scripts/polyfill.js"></script>
 
 </head>
 
 <body>
 
-  <nav id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/" onclick="closeNav()">titulo</a>
-    <a href="#epílogo" onclick="closeNav()">epílogo</a>
-    <a href="#projeto" onclick="closeNav()">o projeto</a>
-  </nav>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/" onclick="closeNav()">titulo</a>
+        <a href="#epílogo" onclick="closeNav()">epílogo</a>
+        <a href="#projeto" onclick="closeNav()">o projeto</a>
+    </nav>
 
-  <main>
-    <button type="button" class="collapsible">
-      <img id="logo" src="./assets/logo.svg" alt="website logo" onclick="openNav()">
-    </button>
-    <section id="epílogo">
-      <div class="viewer">
-        <model-viewer
-          src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/1dozfpcHM2g/R18-Geral.gltf"
-          ios-src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/62vjvG8KjFv/R18-Geral.usdz"
-          alt="Teatro e Centro de Dança de Clarissa AR" quick-look-browsers="safari chrome"
-          interaction-policy="allow-when-focused" camera-controls ar auto-rotate>
-        </model-viewer>
-      </div>
-      <div class="presentation">
-        <div class="title">
-          <h1>epílogo</h1>
-        </div>
-        <div class="description" ss-container>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id enim tortor.
-            Suspendisse
-            in malesuada nunc.
-            Morbi quam sapien, dignissim sed felis vel, pharetra aliquet turpis. Fusce auctor orci vitae lorem ultricies
-            auctor. Donec quis tellus ligula. Cras commodo, ex sed sollicitudin sollicitudin, sem lectus imperdiet
-            tortor, eget feugiat quam dolor quis tellus. Nulla luctus porta euismod. In a velit quis turpis suscipit
-            rhoncus.
-            Donec vitae volutpat lacus. Etiam tincidunt libero ligula, eget tincidunt quam malesuada in.
-          </p>
-          <p class="description emphasis">Corpo.<br>Tempo.<br>Espaço.</p>
-          <p>Nam vitae tortor eget tortor dapibus commodo. Nam vel blandit lacus. Duis eros magna,
-            tincidunt id ligula sit amet, consequat ultrices ante. Cras facilisis arcu purus. Vestibulum vitae orci
-            cursus, suscipit lorem nec, gravida ante. Vivamus finibus ullamcorper ex ac fringilla. Curabitur dui dolor,
-            dignissim nec dictum sit amet, semper sed magna. Morbi non scelerisque nisl. Duis feugiat sollicitudin
-            accumsan. In
-            iaculis tortor eu lectus vulputate, et accumsan nisi tempor.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="projeto">
-      <div class="viewer">
-        <model-viewer
-          src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/1dozfpcHM2g/R18-Geral.gltf"
-          ios-src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/62vjvG8KjFv/R18-Geral.usdz"
-          alt="Teatro e Centro de Dança de Clarissa AR" quick-look-browsers="safari chrome"
-          interaction-policy="allow-when-focused" camera-controls ar auto-rotate>
-        </model-viewer>
-      </div>
-      <div class="presentation">
-        <div class="title">
-          <h1>o projeto</h1>
-        </div>
-        <div class="description" ss-container>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id enim tortor.
-            Suspendisse
-            in malesuada nunc.
-            Morbi quam sapien, dignissim sed felis vel, pharetra aliquet turpis. Fusce auctor orci vitae lorem ultricies
-            auctor. Donec quis tellus ligula. Cras commodo, ex sed sollicitudin sollicitudin, sem lectus imperdiet
-            tortor,
-            eget feugiat quam dolor quis tellus. Nulla luctus porta euismod. In a velit quis turpis suscipit rhoncus.
-            Donec
-            vitae volutpat lacus. Etiam tincidunt libero ligula, eget tincidunt quam malesuada in.
-          </p>
-          <p>Nam vitae tortor eget tortor dapibus commodo. Nam vel blandit lacus. Duis eros magna,
-            tincidunt id ligula sit amet, consequat ultrices ante. Cras facilisis arcu purus. Vestibulum vitae orci
-            cursus,
-            suscipit lorem nec, gravida ante. Vivamus finibus ullamcorper ex ac fringilla. Curabitur dui dolor,
-            dignissim
-            nec dictum sit amet, semper sed magna. Morbi non scelerisque nisl. Duis feugiat sollicitudin accumsan. In
-            iaculis tortor eu lectus vulputate, et accumsan nisi tempor. Aliquam elementum nec augue et porta. Aliquam
-            posuere dui vitae lorem pharetra, nec maximus odio ultrices. Praesent vitae malesuada felis.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
+    <main>
+        <button type="button" class="collapsible">
+            <img id="logo" src="./assets/logo.svg" alt="website logo" onclick="openNav()">
+        </button>
+        <section id="epílogo">
+            <div class="viewer">
+                <model-viewer
+                    src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/1dozfpcHM2g/R18-Geral.gltf"
+                    ios-src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/62vjvG8KjFv/R18-Geral.usdz"
+                    alt="Teatro e Centro de Dança de Clarissa AR" quick-look-browsers="safari chrome"
+                    interaction-policy="allow-when-focused" camera-controls ar auto-rotate>
+                </model-viewer>
+            </div>
+            <div class="presentation">
+                <div class="title">
+                    <h1>epílogo</h1>
+                </div>
+                <div class="description" ss-container>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id enim tortor.
+                        Suspendisse
+                        in malesuada nunc.
+                        Morbi quam sapien, dignissim sed felis vel, pharetra aliquet turpis. Fusce auctor orci vitae
+                        lorem ultricies
+                        auctor. Donec quis tellus ligula. Cras commodo, ex sed sollicitudin sollicitudin, sem lectus
+                        imperdiet
+                        tortor, eget feugiat quam dolor quis tellus. Nulla luctus porta euismod. In a velit quis turpis
+                        suscipit
+                        rhoncus.
+                        Donec vitae volutpat lacus. Etiam tincidunt libero ligula, eget tincidunt quam malesuada in.
+                    </p>
+                    <p class="description emphasis">Corpo.<br>Tempo.<br>Espaço.</p>
+                    <p>Nam vitae tortor eget tortor dapibus commodo. Nam vel blandit lacus. Duis eros magna,
+                        tincidunt id ligula sit amet, consequat ultrices ante. Cras facilisis arcu purus. Vestibulum
+                        vitae orci
+                        cursus, suscipit lorem nec, gravida ante. Vivamus finibus ullamcorper ex ac fringilla. Curabitur
+                        dui dolor,
+                        dignissim nec dictum sit amet, semper sed magna. Morbi non scelerisque nisl. Duis feugiat
+                        sollicitudin
+                        accumsan. In
+                        iaculis tortor eu lectus vulputate, et accumsan nisi tempor.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="projeto">
+            <div class="viewer">
+                <model-viewer
+                    src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/1dozfpcHM2g/R18-Geral.gltf"
+                    ios-src="https://poly.googleusercontent.com/downloads/c/fp/1599931649258152/8yF4Tnu0ljs/62vjvG8KjFv/R18-Geral.usdz"
+                    alt="Teatro e Centro de Dança de Clarissa AR" quick-look-browsers="safari chrome"
+                    interaction-policy="allow-when-focused" camera-controls ar auto-rotate>
+                </model-viewer>
+            </div>
+            <div class="presentation">
+                <div class="title">
+                    <h1>o projeto</h1>
+                </div>
+                <div class="description" ss-container>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id enim tortor.
+                        Suspendisse
+                        in malesuada nunc.
+                        Morbi quam sapien, dignissim sed felis vel, pharetra aliquet turpis. Fusce auctor orci vitae
+                        lorem ultricies
+                        auctor. Donec quis tellus ligula. Cras commodo, ex sed sollicitudin sollicitudin, sem lectus
+                        imperdiet
+                        tortor,
+                        eget feugiat quam dolor quis tellus. Nulla luctus porta euismod. In a velit quis turpis suscipit
+                        rhoncus.
+                        Donec
+                        vitae volutpat lacus. Etiam tincidunt libero ligula, eget tincidunt quam malesuada in.
+                    </p>
+                    <p>Nam vitae tortor eget tortor dapibus commodo. Nam vel blandit lacus. Duis eros magna,
+                        tincidunt id ligula sit amet, consequat ultrices ante. Cras facilisis arcu purus. Vestibulum
+                        vitae orci
+                        cursus,
+                        suscipit lorem nec, gravida ante. Vivamus finibus ullamcorper ex ac fringilla. Curabitur dui
+                        dolor,
+                        dignissim
+                        nec dictum sit amet, semper sed magna. Morbi non scelerisque nisl. Duis feugiat sollicitudin
+                        accumsan. In
+                        iaculis tortor eu lectus vulputate, et accumsan nisi tempor. Aliquam elementum nec augue et
+                        porta. Aliquam
+                        posuere dui vitae lorem pharetra, nec maximus odio ultrices. Praesent vitae malesuada felis.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.body.style.backgroundColor = "transparent";
-    }
-  </script>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "transparent";
+        }
 
-  <script>
-    var el = document.querySelector('.description');
-    SimpleScrollbar.initEl(el);
-  </script>
-  
+        var el = document.querySelector('.description');
+        SimpleScrollbar.initEl(el);
+    </script>
+
 </body>
 
 </html>
