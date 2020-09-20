@@ -1,4 +1,4 @@
-html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, body, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,42 +15,72 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
-    font-size: 100%;
+    scroll-snap-align: start;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+section {
+    height: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.presentation {
+    flex: initial;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewer {
+    flex: auto;
+}
+
+#landing-logo {
+    width: 60%;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    /* make scrollbar transparent */
-}
-
-main {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 .collapsible {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
-    align-self: flex-start;
+    padding: 10px;
+    width: initial;
+    align-items: flex-start;
     background-color: transparent;
     cursor: pointer;
-    padding: 0;
     border: none;
     outline: none;
     display: grid;
     place-items: center;
     font-weight: 700;
-    z-index: 999;
+    z-index: 99;
 }
 
 .active, .collapsible:hover {}
@@ -91,24 +121,6 @@ main {
 
 .sidenav a:hover {
     color: #f1f1f1;
-}
-
-section {
-    height: 100%;
-    width: 100%;
-    flex: auto;
-    scroll-snap-align: start;
-    display: flex;
-}
-
-.presentation {
-    flex: initial;
-    display: flex;
-    flex-direction: column;
-}
-
-.viewer {
-    flex: auto;
 }
 
 .title {
@@ -163,11 +175,6 @@ section {
 model-viewer {
     width: 100%;
     height: 100%;
-}
-
-#titulo {
-    display: grid;
-    place-items: center;
 }
 
 /* Desktop*/

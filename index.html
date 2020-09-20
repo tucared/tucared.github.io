@@ -344,16 +344,15 @@
 </head>
 
 <body>
+  <header id="titulo"> <a href="#epílogo"><img id=" landing-logo" src="./assets/landing.svg" alt="landing page"></a>
+  </header>
   <nav id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#titulo">titulo</a>
-    <a href="#epílogo">epílogo</a>
-    <a href="#projeto">o projeto</a>
+    <a href="#titulo" onclick="closeNav()">titulo</a>
+    <a href="#epílogo" onclick="closeNav()">epílogo</a>
+    <a href="#projeto" onclick="closeNav()">o projeto</a>
   </nav>
   <main>
-    <section id="titulo">
-      <img src="./assets/landing.svg" alt="landing page">
-    </section>
     <button type="button" class="collapsible">
       <img id="logo" src="./assets/logo.svg" alt="website logo" onclick="openNav()">
     </button>
