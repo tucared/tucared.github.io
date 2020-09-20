@@ -36,6 +36,7 @@
     </nav>
 
     <main>
+        <div id="mask"></div>
         <button type="button" class="collapsible">
             <img id="logo" src="./assets/logo.svg" alt="website logo" onclick="openNav()">
         </button>
@@ -127,12 +128,12 @@
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            document.getElementById("mask").style.zIndex = "98";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "transparent";
+            document.getElementById("mask").style.zIndex = "0";
         }
 
         var el = document.querySelector('.description');
