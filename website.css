@@ -48,7 +48,8 @@ section {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    height: auto;
+    width: 0;
     background: transparent;
 }
 
@@ -79,32 +80,34 @@ section {
 
 /* || SIDEBAR MENU */
 
-.collapsible {
+#badge {
     position: fixed;
+    z-index: 100;
     top: 0;
-    padding: 10px;
-    width: initial;
-    align-items: flex-start;
-    background-color: transparent;
-    cursor: pointer;
+    height: auto;
+    width: calc(100px + 2.5vw);
+    padding: 0;
     border: none;
     outline: none;
-    display: grid;
-    place-items: center;
-    font-weight: 700;
-    z-index: 100;
+    background-color: transparent;
 }
 
-#mask {
+#logo {
+    margin: 20%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#nav-mask {
+    position: fixed;
+    z-index: 0;
     height: 100%;
     width: 100%;
-    position: fixed;
     opacity: .6;
-    z-index: 0;
     background-color: slategrey;
 }
 
-.active, .collapsible:hover {}
+.active, #badge:hover {}
 
 .sidenav {
     position: fixed;
@@ -209,11 +212,6 @@ model-viewer {
     .viewer {
         flex: 4 auto;
     }
-    #logo {
-        width: 65px;
-        height: 65px;
-        margin: 20px;
-    }
     .sidenav a {
         padding: 10px;
         font-size: 2em;
@@ -224,7 +222,6 @@ model-viewer {
 
 @media (max-width: 480px) {
     body {
-        flex-direction: column;
         font-size: 14px;
     }
     section {
@@ -247,11 +244,6 @@ model-viewer {
         font-size: 1.5em;
         line-height: 20px;
         height: 50px;
-    }
-    #logo {
-        width: 50px;
-        height: 50px;
-        margin: 15px;
     }
     .sidenav a {
         padding: 5px;
