@@ -16,26 +16,10 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     font-style: normal;
 }
 
-body {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-y: hidden;
-}
-
-header {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100vw;
-    scroll-snap-align: start;
-    display: grid;
-    place-items: center;
-}
-
 main {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
-    scroll-snap-align: start;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     display: flex;
@@ -44,12 +28,13 @@ main {
 }
 
 section {
-    background-color: white;
     z-index: 1;
     height: 100%;
+    width: 100%;
     scroll-snap-align: start;
     display: flex;
     flex: 0 0 auto;
+    background-color: white;
 }
 
 .presentation {
@@ -77,20 +62,20 @@ section {
 }
 
 #title-logo {
-    width: calc(330px + 30vw);
+    width: calc(200px + 35vw);
     animation: fadeInAnimation linear 2s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-     } 
-} 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* || SIDEBAR MENU */
 
@@ -219,8 +204,10 @@ model-viewer {
 
 @media (min-width: 480px) {
     .presentation {
-        flex-basis: 600px;
-        width: 400px;
+        flex: 1 300px;
+    }
+    .viewer {
+        flex: 4 auto;
     }
     #logo {
         width: 65px;
@@ -243,6 +230,13 @@ model-viewer {
     section {
         flex-direction: column;
     }
+    .presentation {
+        flex: initial;
+        order: 2;
+    }
+    .viewer {
+        flex: 1 auto;
+    }
     .title h1 {
         font-size: 46px;
     }
@@ -259,8 +253,6 @@ model-viewer {
         height: 50px;
         margin: 15px;
     }
-    #title-logo {
-        width: calc(150px + 30vw);}
     .sidenav a {
         padding: 5px;
         font-size: 2em;
