@@ -96,6 +96,7 @@ section {
     margin: 20%;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 #nav-mask {
@@ -104,7 +105,7 @@ section {
     height: 100%;
     width: 100%;
     opacity: .6;
-    background-color: slategrey;
+    background-color: #121212;
 }
 
 .sidenav {
@@ -118,7 +119,17 @@ section {
     font-family: sauvageregular, serif;
     overflow-x: hidden;
     transition: 0.5s;
-    background-color: #111;
+    background-color: #1F1B24;
+    color: mistyrose;
+}
+
+.sidenav p {
+    position: absolute;
+    font-family: montserrat;
+    bottom: 100px;
+    padding: 20px;
+    font-size: .9em;
+    white-space: nowrap;
 }
 
 .sidenav a {
@@ -127,7 +138,6 @@ section {
     text-decoration: none;
     font-weight: 600;
     font-size: 30px;
-    color: #818181;
     display: block;
     white-space: nowrap;
     transition: 0.3s;
@@ -142,7 +152,7 @@ section {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
 }
 
 /* || SECTION STYLING */
