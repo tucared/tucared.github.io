@@ -107,20 +107,18 @@ section {
     background-color: slategrey;
 }
 
-.active, #badge:hover {}
-
 .sidenav {
     position: fixed;
-    padding-top: 130px;
-    font-family: sauvageregular, serif;
-    height: 100%;
-    width: 0;
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: #111;
+    height: 100%;
+    width: 0;
+    padding-top: calc((100px + 2.5vw)/1.2);
+    font-family: sauvageregular, serif;
     overflow-x: hidden;
     transition: 0.5s;
+    background-color: #111;
 }
 
 .sidenav a {
