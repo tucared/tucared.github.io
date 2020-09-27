@@ -33,18 +33,13 @@ section {
     height: 100%;
     width: 100%;
     scroll-snap-align: start;
-    display: flex;
     flex: 0 0 auto;
+    overflow-x: hidden;
 }
 
-.presentation {
-    flex: initial;
-    display: flex;
-    flex-direction: column;
-}
-
-.viewer {
-    flex: auto;
+p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.08em;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +48,13 @@ section {
     background: transparent;
 }
 
-/* || LANDING PAGE */
+/* || SECTION STYLES */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+}
 
 .centered {
     display: grid;
@@ -68,6 +69,35 @@ section {
 .light {
     background-color: white;
     color: black;
+}
+
+.grid-item {
+    align-self: center;
+    padding: calc(.6em + 1.3vw);
+}
+
+.right {    
+    justify-self: right;
+}
+
+.left {
+    justify-self: left;
+}
+
+.medium {
+    font-size: calc(.6em + 1.5vw);
+}
+
+svg {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#item-corpo {
+    font-size: calc(1.5em + 2vw);
+    text-align: center;
+    font-weight: 300;
 }
 
 #title-logo {
@@ -100,39 +130,12 @@ section {
     background-color: transparent;
 }
 
-p {
-    font-family: Montserrat, sans-serif;
-    letter-spacing: 0.08em;
-}
-
 #logo {
     margin: 20%;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.4s;
     background-color: white;
-}
-
-.grid-3 {
-    width: 70%;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-}
-
-.grid-item {
-    align-self: center;
-    padding: 30px;
-}
-
-#item-corpo {
-    font-size: 50px;
-    text-align: center;
-    font-weight: 300;
-}
-
-.medium {
-    font-size: 30px;
 }
 
 #nav-mask {
@@ -193,10 +196,6 @@ p {
 
 /* || SECTION STYLING */
 
-.title {
-    flex: none;
-}
-
 .title h1 {
     text-align: center;
     font-family: sauvageregular, serif;
@@ -218,11 +217,6 @@ p {
     margin-bottom: .2em;
     display: block;
     height: 0;
-}
-
-.description {
-    flex: initial;
-    overflow-y: auto;
 }
 
 .description p {
