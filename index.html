@@ -30,19 +30,24 @@
   <main>
     <nav id="mySidenav" class="sidenav">
       <!---<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>--->
-      <a href="/" onclick="closeNav()">titulo</a>
+      <a href="/" onclick="closeNav()">home</a>
       <a href="#epílogo" onclick="closeNav()">epílogo</a>
       <a href="#projeto" onclick="closeNav()">o projeto</a>
       <p class="footer">&copy; Clarissa Aburachid Rocha</p>
     </nav>
 
     <div id="nav-mask" onclick="closeNav()"></div>
+    <iframe id="vimeo"
+      src="https://player.vimeo.com/video/151532082?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1#t=11s"
+      style="z-index:0; position:fixed;top: 0;left: 0;width: 100%;height: 100%;" frameborder="0"
+      allow="autoplay"></iframe>
+      <script src="https://player.vimeo.com/api/player.js"></script>
 
     <button type="button" id="badge">
       <img id="logo" src="./assets/logo.svg" alt="website logo" onclick="openNav()">
     </button>
 
-    <section class="centered light">
+    <section id="home" class="centered light">
       <a href="/projeto.html">
         <img id="title-logo" src="./assets/title-logo.svg" alt="title logo">
       </a>
@@ -71,6 +76,11 @@
         </svg>
       </div>
       <p class="grid-item left medium">TÓPICOS CENTRAIS DA ARQUITETURA E DA DANÇA</p>
+    </section>
+
+    <section id="projeto" class="centered" style="position: relative;">
+      <div style="z-index:10;background-color:darkgray;opacity:.6;width:100%;height:100%;position:absolute;top:0">
+      </div>
     </section>
 
 </body>

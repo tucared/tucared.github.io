@@ -34,7 +34,7 @@ section {
     width: 100%;
     scroll-snap-align: start;
     flex: 0 0 auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 p {
