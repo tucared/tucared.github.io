@@ -25,6 +25,7 @@ main {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    text-transform: uppercase;
 }
 
 section {
@@ -34,7 +35,6 @@ section {
     scroll-snap-align: start;
     display: flex;
     flex: 0 0 auto;
-    background-color: white;
 }
 
 .presentation {
@@ -55,11 +55,19 @@ section {
 
 /* || LANDING PAGE */
 
-#landing {
-    height: 100%;
-    width: 100%;
+.centered {
     display: grid;
     place-items: center;
+}
+
+.dark   {
+    background-color: black;
+    color: white;
+}
+
+.light  {
+    background-color: white;
+    color: black;
 }
 
 #title-logo {
@@ -92,11 +100,39 @@ section {
     background-color: transparent;
 }
 
+p {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.08em;
+}
+
 #logo {
     margin: 20%;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.4s;
+    background-color: white;
+}
+
+.grid-3 {
+    width: 70%;
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+
+.grid-item {
+    align-self: center;
+    padding: 30px;
+}
+
+#item-corpo {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.medium {
+    font-size: 30px;
 }
 
 #nav-mask {
