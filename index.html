@@ -5,6 +5,7 @@
 
   <link rel="stylesheet" type="text/css" href="./website.css">
   <link rel="icon" type="image/svg" href="./assets/favicon.svg">
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
 
   <title>Teatro & Centro de Dança</title>
 
@@ -44,7 +45,11 @@
       <script src="https://player.vimeo.com/api/player.js"></script>--->
 
     <div style="z-index:0; position:fixed;width:100%;height:100%;padding-bottom:56%;">
-      <img src="assets/tessaracts.mp4">
+      <video id="my-video" class="video-js" autoplay muted loop preload="auto"
+        data-setup="{}">
+        <source src="assets/tessaracts.mp4" type="video/mp4" />
+      </video>
+      <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
     </div>
 
     <button type="button" id="badge">
