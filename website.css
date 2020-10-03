@@ -61,6 +61,12 @@ p {
     place-items: center;
 }
 
+.bottom {
+    max-width:500px;
+    margin: calc(2em + 2vw);
+    align-self: flex-end;
+}
+
 .dark {
     background-color: black;
     color: white;
@@ -71,12 +77,19 @@ p {
     color: black;
 }
 
+.transparent {
+    z-index: 10;
+    background-color: darkgray;
+    opacity: .6;
+    display: flex;
+}
+
 .grid-item {
     align-self: center;
     padding: calc(.6em + 1.3vw);
 }
 
-.right {    
+.right {
     justify-self: right;
 }
 
@@ -86,6 +99,10 @@ p {
 
 .medium {
     font-size: calc(.6em + 1.5vw);
+}
+
+.medium-2 {
+    font-size: calc(1.2em + .5vw);
 }
 
 svg {
@@ -244,12 +261,6 @@ model-viewer {
 /* || DESKTOP SPECIFIC */
 
 @media (min-width: 480px) {
-    .presentation {
-        flex: 1 300px;
-    }
-    .viewer {
-        flex: 4 auto;
-    }
     .sidenav a {
         padding: 10px;
         font-size: 2em;
@@ -261,16 +272,6 @@ model-viewer {
 @media (max-width: 480px) {
     body {
         font-size: 14px;
-    }
-    section {
-        flex-direction: column;
-    }
-    .presentation {
-        flex: initial;
-        order: 2;
-    }
-    .viewer {
-        flex: 1 auto;
     }
     .title h1 {
         font-size: 46px;
