@@ -147,6 +147,10 @@ svg {
     background-color: transparent;
 }
 
+#home {
+    z-index: 111;
+}
+
 #logo {
     margin: 20%;
     border-radius: 50%;
