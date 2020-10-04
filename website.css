@@ -37,9 +37,13 @@ section {
     overflow: hidden;
 }
 
-p {
+h2, p {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.08em;
+}
+
+h2 {
+    font-size: calc(1.2em + 1.5vw);
 }
 
 ::-webkit-scrollbar {
@@ -118,10 +122,24 @@ svg {
 }
 
 #title-logo {
-    width: calc(200px + 35vw);
+    width: calc(180px + 30vw);
     animation: fadeInAnimation linear 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+#promenade {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+#promenade-title {
+    max-width:400px;
+    margin: calc(2em + 2vw);
+}
+
+#promenade-curve {
+    padding: calc(2em + 2vw);
 }
 
 @keyframes fadeInAnimation {
@@ -140,7 +158,7 @@ svg {
     z-index: 100;
     top: 0;
     height: auto;
-    width: calc(100px + 2.5vw);
+    width: calc(100px + 1.2vw);
     padding: 0;
     border: none;
     outline: none;
@@ -152,7 +170,7 @@ svg {
 }
 
 #logo {
-    margin: 20%;
+    margin: 15%;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.4s;
