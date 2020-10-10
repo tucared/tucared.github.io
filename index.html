@@ -30,11 +30,15 @@
 <body>
   <main>
     <nav id="mySidenav" class="sidenav">
-      <!---<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>--->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#home" onclick="closeNav()">home</a>
       <a href="#epílogo" onclick="closeNav()">epílogo</a>
-      <a href="#projeto" onclick="closeNav()">o projeto</a>
-      <p class="footer">&copy; Clarissa Aburachid Rocha</p>
+      <a href="/" onclick="closeNav()">localização</a>
+      <a href="/" onclick="closeNav()">conceito</a>
+      <a href="#projeto" onclick="closeNav()">projeto</a>
+      <a href="/" onclick="closeNav()">imagens</a>
+      <a href="/" onclick="closeNav()">sobre</a>
+      <p class="footer">&copy; Clarissa Aburachid</p>
     </nav>
 
     <div id="nav-mask" onclick="closeNav()"></div>
@@ -57,9 +61,10 @@
     </button>
 
     <section id="epílogo" class="centered dark grid-3">
+      <div></div>
       <p id="item-corpo" class="grid-item right">Corpo<br>Tempo<br>Espaço</p>
       <div class="grid-item" style="padding: 0%;">
-        <svg width="220" fill="white" alt="right-arrow" viewBox="0 0 220 100" preserveAspectRatio="xMinYMin meet">
+        <svg width="220" fill="white" alt="right-arrow" viewBox="-4 0 220 100" preserveAspectRatio="xMinYMin meet">
           <path class="st0" d="M3.33,70.41c-1.31-4.6-2.2-9.3-2.6-14.07c-0.11-1.27-0.16-2.53-0.2-3.81c-0.06-1.58-0.05,3.02,0,1.44
           c0.01-0.26,0.01-0.51,0.02-0.77c0.03-0.86,0.08-1.72,0.15-2.58c0.18-2.29,0.49-4.57,0.94-6.83c1.64-8.3,5.15-16.15,10.51-22.72
           c4.95-6.07,11.38-10.99,18.73-13.76c4.24-1.6,8.82-2.54,13.37-2.27c4.7,0.29,8.92,2.08,12.76,4.73c3.88,2.68,7.38,5.91,10.97,8.97
@@ -78,7 +83,7 @@
           C193.37,88.52,193.45,89.08,193.39,89.14L193.39,89.14z" />
         </svg>
       </div>
-      <p class="grid-item left medium">TÓPICOS CENTRAIS DA ARQUITETURA E DA DANÇA</p>
+      <p class="grid-item left medium-2">TÓPICOS CENTRAIS DA ARQUITETURA<br>E DA DANÇA</p>
     </section>
 
     <section id="projeto" class="transparent">
@@ -121,7 +126,7 @@
     <section id="desempenho" class="light standard">
       <div id="desempenho-title" class="title">
         <h2 style="text-align: center;">
-          desempehno urbano
+          desempenho urbano
         </h2>
       </div>
       <div id="desempenho-content" class="dual-cols">
@@ -358,7 +363,7 @@
 
 <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "calc(180px + 5vw)";
+    document.getElementById("mySidenav").style.width = "calc(200px + 6vw)";
     document.getElementById("nav-mask").style.zIndex = "98";
     document.getElementById("logo").style.backgroundColor = "white";
   }

@@ -60,7 +60,7 @@ h2 {
 
 .grid-3 {
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 12.5% 1fr 20% 1fr 12.5%;
     grid-template-rows: auto;
 }
 
@@ -87,8 +87,8 @@ h2 {
 
 .transparent {
     z-index: 10;
-    background-color: darkgray;
-    opacity: .6;
+    background-color: #F3EDCC;
+    opacity: .4;
     display: flex;
 }
 
@@ -99,12 +99,16 @@ h2 {
     min-height: 0;
 }
 
+#item-corpo {
+    font-size: calc(1.4em + 1.2vw);
+}
+
 .right {
-    justify-self: right;
+    justify-self: center;
 }
 
 .left {
-    justify-self: left;
+    text-align: center;
 }
 
 .medium {
@@ -202,7 +206,7 @@ svg {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.4s;
-    background-color: white;
+    background-color: transparent;
 }
 
 #nav-mask {
@@ -243,10 +247,11 @@ svg {
     margin: 20px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.3em;
     display: block;
     white-space: nowrap;
     transition: 0.3s;
+    font-family: 'Montserrat';
 }
 
 .sidenav .closebtn {
