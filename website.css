@@ -214,8 +214,8 @@ svg {
     z-index: 0;
     height: 100%;
     width: 100%;
-    opacity: .6;
-    background-color: #121212;
+    opacity: .5;
+    background-color: #1b1b1b ;
 }
 
 .sidenav {
@@ -229,7 +229,7 @@ svg {
     font-family: sauvageregular, serif;
     overflow-x: hidden;
     transition: 0.5s;
-    background-color: #1F1B24;
+    background-color: #0D0D0D;
     color: mistyrose;
 }
 
