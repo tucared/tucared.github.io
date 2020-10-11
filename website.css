@@ -56,6 +56,26 @@ h2 {
     background: transparent;
 }
 
+.standard-2 {
+    display: grid;
+    grid-template-rows: calc(100px + 1.2vw) 1fr calc(.7*(100px + 1.2vw));
+    grid-template-columns: calc(100px + 1.2vw) 1fr calc(.7*(100px + 1.2vw));
+    grid-template-areas: 
+      ".  hd    ."
+      ".  main  ."
+      ".  ft    ft";
+}
+
+.header {
+    grid-area: hd;
+}
+.footer {
+    grid-area: ft;
+}
+.content {
+    grid-area: main;
+}
+
 /* || SECTION STYLES */
 
 .grid-3 {
@@ -70,7 +90,7 @@ h2 {
 }
 
 .bottom {
-    max-width: 500px;
+    max-width: 600px;
     margin: calc(2em + 2vw);
     align-self: flex-end;
 }
@@ -87,8 +107,8 @@ h2 {
 
 .transparent {
     z-index: 10;
-    background-color: #F3EDCC;
-    opacity: .4;
+    background-color: #1b1b1b;
+    opacity: .5;
     display: flex;
 }
 
