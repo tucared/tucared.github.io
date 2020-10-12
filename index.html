@@ -94,7 +94,9 @@
       </div>
     </section>
 
+<!--     
     <!--
+<!--     
     <section id="desempenho" class="light standard-old">
       <div id="desempenho-title" class="title">
         <h2 style="text-align: center;">
@@ -123,6 +125,101 @@
     </section>
     -->
 
+    <section id="diagnostico" class="standard light">
+      <div class="header">
+        <h2>Diagnóstico Urbanístico</h2>
+      </div>
+
+      <div class="content mapa_container">
+        <div class="mapa_image_container">
+          <img id="diagnostico_mapa_zero" class="mapa_image_item" src="./assets/img/4-diagnostico_zero_geral.jpg" alt="Diagnostico geral" style="z-index: 1;">
+          <img id="diagnostico_mapa_one" class="mapa_image_item" src="./assets/img/4-diagnostico_um_tipo_usuario.jpg" alt="Diagnostico um tipo usuario">
+          <img id="diagnostico_mapa_two" class="mapa_image_item" src="./assets/img/4-diagnostico_forte_carater_de_lazer_e_descanso.jpg" alt="Diagnostico forte carater de lazer e descanso">
+          <img id="diagnostico_mapa_three" class="mapa_image_item" src="./assets/img/4-diagnostico_principais_pontos_de_concentracai_de.jpg" alt="Diagnostico principais pontos de concentracao">
+          <img id="diagnostico_mapa_four" class="mapa_image_item" src="./assets/img/4-diagnostico_concentracao_de_populacao_de_rua.jpg" alt="Diagnostico concentracao de popoulacao de rua">
+          <img id="diagnostico_mapa_five" class="mapa_image_item" src="./assets/img/4-diagnostico_baixo_fluxo_pedestres.jpg" alt="Diagnostico baixo fluxo de pedestres">
+        </div>
+        <div class="legenda">
+          <ul class="legenda_list">
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_zero')">
+              <img class="legenda_list_item_bullet" id="diagnostico_icon_teatro" class="mapa_image_item" src="./assets/img/4-icon_teatro.jpg" alt="Diagnostico icone teatro">
+              <div class="legenda_list_item_text">TEATRO E CENTRO DE DANÇA</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_zero')">
+              <div class="legenda_list_item_bullet bullet_square" style="background-color: #767676;"></div>
+              <div class="legenda_list_item_text">ÁREA DE INTERVENÇÃO</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_zero')">
+              <img class="legenda_list_item_bullet" id="diagnostico_icon_barreira" class="mapa_image_item" src="./assets/img/4-icon_barreira.jpg" alt="Diagnostico icone barreira">
+              <div class="legenda_list_item_text">BARREIRA URBANA (FERROVIA)</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_zero')">
+              <div class="legenda_list_item_bullet bullet_line" style="background-color: #7EBFFF;"></div>
+              <div class="legenda_list_item_text">CÓRREGO TAMPONADO</div>
+            </li>
+            <li class="legenda_list_item" >
+              <div></div>
+            </li>
+          </ul>
+          <h2 class="legenda_title" onclick="changeMapImage('diagnostico_mapa_zero')">Dinâmica Urbana</h2>
+          <ul class="legenda_list">
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_one')">
+              <div class="legenda_subtitle">PERFIL DE COMÉRCIO E USUÁRIO</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_one')">
+              <div class="legenda_list_item_bullet bullet_square" style="background-color: #E7DFD5;"></div>
+              <div class="legenda_list_item_text">PREDOMINÂNCIA DO COMÉRCIO POPULAR E USUÁRIOS DE BAIXA RENDA</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_one')">
+              <div class="legenda_list_item_bullet bullet_square" style="background-color: #BEA88F;"></div>
+              <div class="legenda_list_item_text">PRESENÇA DE USUÁRIOS COM MAIOR PODER AQUISITIVO (COMÉRCIO MAIS SOFISTICADO)</div>
+            </li>
+          </ul>
+          <ul class="legenda_list">
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_two')">
+              <div class="legenda_subtitle">PRAÇA DA ESTAÇÃO E PARQUE MUNICIPAL</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_two')">
+              <div class="legenda_list_item_bullet bullet_square" style="background-color: #A2C76B;"></div>
+              <div class="legenda_list_item_text">FORTE CARÁTER DE LAZER E DESCANSO</div>
+            </li>
+          </ul>
+          <ul class="legenda_list">
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_three')">
+              <div class="legenda_subtitle">TRANSPORTE PÚBLICO</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_three')">
+              <div class="legenda_list_item_bullet bullet_circle" style="background-color: #F2A18E;"></div>
+              <div class="legenda_list_item_text">PRINCIPAIS PONTOS DE CONCENTRAÇÃO DE PEDESTRES</div>
+            </li>
+          </ul>
+          <ul class="legenda_list">
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_five')">
+              <div class="legenda_subtitle">EXTENSÃO INÓSPITA</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_five')">
+              <div class="legenda_list_item_bullet bullet_square" style="background-color: #F99558;"></div>
+              <div class="legenda_list_item_text">BAIXO FLUXO DE PEDESTRES E ALTO GRAU DE DEGRADAÇÃO DAS CALÇADAS. ÁREAS APROPRIADAS POR POPULAÇÃO MARGINALIZADA. EDIFICAÇÕES ABANDONADAS, GALPÕES, IMÓVEIS FECHADOS. IDEIA DE NÃO LUGAR.</div>
+            </li>
+          </ul>
+            <ul class="legenda_list">
+             <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_four')">
+                <div class="legenda_subtitle">CONCENTRAÇÃO DE POPULAÇÃO DE RUA</div>
+              </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_four')">
+              <div class="legenda_list_item_bullet bullet_square" style="background-color: #FFDF7E;"></div>
+              <div class="legenda_list_item_text">DIA</div>
+            </li>
+            <li class="legenda_list_item" onclick="changeMapImage('diagnostico_mapa_four')">
+              <img class="legenda_list_item_bullet" id="diagnostico_icon_noite" class="mapa_image_item" src="./assets/img/4-icon_noite.jpg" alt="Diagnostico icone noite">
+              <div class="legenda_list_item_text">NOITE</div>
+            </li>
+          </ul>  
+        </div>
+      </div>
+      <p class="footnote_reference">FONTE: Práxis, 2006; ELABORAÇÃO: Clarissa Aburachid, 2020</p>
+    </section>
+
 </body>
 
 <script>
@@ -136,6 +233,12 @@
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("nav-mask").style.zIndex = "0";
     document.getElementById("logo").style.backgroundColor = "transparent";
+  }
+
+  let mapsImagesZIndexGlobal = 1;
+  function changeMapImage(elementId) {
+    document.getElementById(elementId).style.zIndex = mapsImagesZIndexGlobal + 1;
+    mapsImagesZIndexGlobal++;
   }
 </script>
 
