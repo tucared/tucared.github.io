@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{160:function(e,t,n){"use strict";n.r(t);var o=n(32),component=Object(o.a)({},(function(){var e=this,t=e.$createElement;return(e._self._c||t)("h1",[e._v("The future portfolio website of Clarissa Aburachid Rocha!")])}),[],!1,null,null,null);t.default=component.exports}}]);

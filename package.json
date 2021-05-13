@@ -1,0 +1,13 @@
+{
+    "name": "my-app",
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "start": "nuxt start",
+        "deploy": "gh-pages -d dist"
+    },
+    "dependencies": {
+        "nuxt": "^2.15.4"
+    }
+}
