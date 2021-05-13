@@ -1,27 +1,6 @@
-@font-face {
-    font-family: 'Montserrat-Light';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('~/assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('~/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Fluire-Caps';
-    src: url('~/assets/fonts/Fluire/Fluire Caps.otf') format('opentype');
-}
-
 body {
     background-color: #DDC5B9;
-    font-family: "Montserrat-Light";
+    font-family: Montserrat, sans-serif;
 }
 
 h1 {
@@ -47,11 +26,6 @@ h1 {
     max-width: 70vw;
 }
 
-#name {
-    font-size: 180px;
-    font-family: "Fluire-Caps";
-}
-
 #landing-links-container {
     display: flex;
     justify-content: center;
@@ -59,7 +33,6 @@ h1 {
 
 .landing-link {
     margin: 0 3em;
-    font-family: "Montserrat-Regular";
     font-size: 32px;
 }
 
