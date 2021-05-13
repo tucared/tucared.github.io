@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>The future portfolio website of Clarissa Aburachid Rocha!</h1>
-    <NuxtLink to="/blog/blog-post">To Blog Post</NuxtLink>
+    <h1>Clarissa Aburachid Rocha</h1>
+    <NuxtLink to="/blog/blog-post">Architecture</NuxtLink>
   </div>
 </template>
