@@ -1,12 +1,12 @@
 <template>
   <section class="centered">
-    <h1 id="name">Clarissa Aburachid Rocha</h1>
+    <img id="logo" src="~/assets/images/logo.png" />
     <div id="landing-links-container">
       <div class="landing-link">
-        <NuxtLink to="/archi">Architecture</NuxtLink>
+        <NuxtLink to="/archi">ARCHITECTURE</NuxtLink>
       </div>
       <div class="landing-link">
-        <NuxtLink to="/photo">Photographie</NuxtLink>
+        <NuxtLink to="/photo">PHOTOGRAPHIE</NuxtLink>
       </div>
     </div>
   </section>
