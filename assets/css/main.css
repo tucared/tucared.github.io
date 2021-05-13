@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('~assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    src: url('~/assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -11,12 +11,12 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('~assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('~/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Fluire-Caps';
-    src: url('~assets/fonts/Fluire/Fluire Caps.otf') format('opentype');
+    src: url('~/assets/fonts/Fluire/Fluire Caps.otf') format('opentype');
 }
 
 body {
