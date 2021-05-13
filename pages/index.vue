@@ -1,6 +1,8 @@
 <template>
   <section class="centered">
-    <img id="logo" src="~/assets/images/logo.png" />
+    <div id="logo-container">
+      <img id="logo" src="~/assets/images/logo.png" />
+    </div>
     <div id="landing-links-container">
       <div class="landing-link">
         <NuxtLink to="/archi">ARCHITECTURE</NuxtLink>

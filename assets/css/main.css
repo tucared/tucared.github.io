@@ -37,8 +37,14 @@ h1 {
     transform: translate(-50%, -50%)
 }
 
+#logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #logo {
-    width: 75vw;
+    width: 80%;
 }
 
 #name {
@@ -57,12 +63,11 @@ h1 {
     font-size: 32px;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit;
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-  color: #c79984;
+    color: #c79984;
 }
