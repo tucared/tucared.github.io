@@ -1,17 +1,9 @@
-<style>
-  .nuxt-content h1 {
-    font-weight: bold;
-    font-size: 39px;
-  }
-  .nuxt-content p {
-    margin-bottom: 20px;
-  }
-</style>
-
 <template>
   <div>
     <h1>Architecture Section</h1>
-    <NuxtLink to="/archi/my-first-archi-project">Project #1</NuxtLink>
-    <NuxtLink to="/archi/my-second-archi-project">Project #2</NuxtLink>
+    <ul>
+      <li><NuxtLink to="/archi/teatro-e-centro-de-danca">Teatro e Centro de Dança</NuxtLink></li>
+      <li><NuxtLink to="/archi/home-kitchen">Home Kitchen</NuxtLink></li>
+    </ul>
   </div>
 </template>

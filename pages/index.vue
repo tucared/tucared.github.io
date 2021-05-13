@@ -8,7 +8,7 @@
         <NuxtLink to="/archi">ARCHITECTURE</NuxtLink>
       </div>
       <div class="landing-link">
-        <NuxtLink to="/photo">PHOTOGRAPHIE</NuxtLink>
+        <NuxtLink to="/photo">PHOTOGRAPHY</NuxtLink>
       </div>
     </div>
   </section>
