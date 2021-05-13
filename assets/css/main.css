@@ -56,3 +56,13 @@ h1 {
     font-family: "Montserrat-Regular";
     font-size: 32px;
 }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #c79984;
+}
