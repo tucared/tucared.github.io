@@ -1,3 +1,13 @@
+<style>
+  .nuxt-content h1 {
+    font-weight: bold;
+    font-size: 39px;
+  }
+  .nuxt-content p {
+    margin-bottom: 20px;
+  }
+</style>
+
 <template>
   <div>
     <h1>Architecture Section</h1>
