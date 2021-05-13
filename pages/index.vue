@@ -1,7 +1,7 @@
 <template>
   <section class="centered">
     <div id="logo-container">
-      <img id="logo" src="~/assets/images/logo.png" />
+      <img id="logo" src="~assets/images/logo.png" />
     </div>
     <div id="landing-links-container">
       <div class="landing-link">
