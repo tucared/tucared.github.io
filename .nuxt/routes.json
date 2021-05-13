@@ -2,13 +2,15 @@
   {
     "name": "blog-slug",
     "path": "/blog/:slug?",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\nuxt\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug"
+    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_6b3a9995"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\nuxt\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_043ac2ff"
   }
 ]
