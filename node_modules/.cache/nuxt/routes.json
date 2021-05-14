@@ -3,35 +3,30 @@
     "name": "archi",
     "path": "/archi",
     "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\archi\\\\index.vue",
-    "chunkName": "pages/archi/index",
-    "_name": "_d1734ffc"
+    "chunkName": "pages/archi/index"
   },
   {
     "name": "photo",
     "path": "/photo",
     "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\photo\\\\index.vue",
-    "chunkName": "pages/photo/index",
-    "_name": "_3ef3d343"
+    "chunkName": "pages/photo/index"
   },
   {
     "name": "archi-slug",
     "path": "/archi/:slug",
     "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\archi\\\\_slug.vue",
-    "chunkName": "pages/archi/_slug",
-    "_name": "_d4e0928c"
+    "chunkName": "pages/archi/_slug"
   },
   {
     "name": "photo-slug",
     "path": "/photo/:slug",
     "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\photo\\\\_slug.vue",
-    "chunkName": "pages/photo/_slug",
-    "_name": "_3d3d31fb"
+    "chunkName": "pages/photo/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_043ac2ff"
+    "chunkName": "pages/index"
   }
 ]
