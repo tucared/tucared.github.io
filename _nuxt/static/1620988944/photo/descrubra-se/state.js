@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1620988944",layout:"default",error:a,serverRendered:true,routePath:"\u002Fphoto\u002Fdescrubra-se",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"70698eab"}}}}(null));
