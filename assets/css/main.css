@@ -18,6 +18,7 @@ h1 {
 
 #maintenance-banner h1 {
     position: absolute;
+    margin-left: 7%;
 }
 
 #logo-container {
