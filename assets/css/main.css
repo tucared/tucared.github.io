@@ -16,6 +16,10 @@ h1 {
     transform: translate(-50%, -50%)
 }
 
+#maintenance-banner h1 {
+    position: absolute;
+}
+
 #logo-container {
     display: flex;
     justify-content: center;
