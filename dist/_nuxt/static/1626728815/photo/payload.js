@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/photo", {data:[{projects:[{slug:"teatro-e-centro-de-danca",description:"That one TCC project",title:"Teatro & Centro da Dança"},{slug:"home-kitchen",description:"Interior architecture executive project",title:"Home kitchen"}]}],fetch:{},mutations:void 0});

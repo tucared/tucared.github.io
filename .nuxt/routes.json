@@ -9,15 +9,15 @@
   {
     "name": "field",
     "path": "/:field",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\_field.vue",
-    "chunkName": "pages/_field",
-    "_name": "_4bdfb31e"
+    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\_field\\\\index.vue",
+    "chunkName": "pages/_field/index",
+    "_name": "_0c5683a4"
   },
   {
-    "name": "project",
-    "path": "/:project",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\_project.vue",
-    "chunkName": "pages/_project",
-    "_name": "_776f7a86"
+    "name": "field-project",
+    "path": "/:field/:project",
+    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\_field\\\\_project.vue",
+    "chunkName": "pages/_field/_project",
+    "_name": "_59df83f8"
   }
 ]
