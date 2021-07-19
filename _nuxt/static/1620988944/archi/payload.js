@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/archi", {data:[{}],fetch:{},mutations:void 0});
