@@ -4,13 +4,19 @@
     <div id="logo-container">
       <img id="logo" src="~/assets/img/logo.png" />
     </div>
-    <div id="landing-links-container">
+    <div id="landing-links-container" v-for="field of fields" :key="field.slug">
       <div class="landing-link">
-        <NuxtLink to="/archi">ARCHITECTURE</NuxtLink>
-      </div>
-      <div class="landing-link">
-        <NuxtLink to="/photo">PHOTOGRAPHY</NuxtLink>
+        <NuxtLink :to="`${field.slug}`">{{ field.landing.toUpperCase() }}</NuxtLink>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const fields = await $content("fields", params.slug).fetch();
+    return { fields };
+  },
+};
+</script>
