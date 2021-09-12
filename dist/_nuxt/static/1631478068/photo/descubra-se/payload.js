@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/photo/descubra-se", {data:[{title:"Descubra-se",description:"Helping women know themselves"}],fetch:{},mutations:void 0});
