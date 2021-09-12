@@ -6,22 +6,22 @@
 </template>
 
 <script>
-  export default {
-    async asyncData({ $content, params, error}) {
+export default {
+  async asyncData({ $content, params, error }) {
     try {
-      const [project] = await $content('projects', params.slug)
+      const [project] = await $content("projects", params.slug)
         .where({ slug: params.project })
-        .fetch()
+        .fetch();
 
-      const title = project.title
-      const description = project.description
-      return { title, description }
-    }
-    catch (err) {
+      const title = project.title;
+      const description = project.description;
+      return { title, description };
+    } catch (err) {
       error({
         statusCode: 404,
         message: "Project could not be found",
       });
     }
-  }}
+  },
+};
 </script>

@@ -14,4 +14,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  "tailwindcss.lint": {
+    "tailwindCSS.validate": "warning"
+  }
 }

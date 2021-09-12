@@ -6,7 +6,9 @@
     </div>
     <div id="landing-links-container" v-for="field of fields" :key="field.slug">
       <div class="landing-link">
-        <NuxtLink :to="`${field.slug}`">{{ field.landing.toUpperCase() }}</NuxtLink>
+        <NuxtLink :to="`${field.slug}`">{{
+          field.landing.toUpperCase()
+        }}</NuxtLink>
       </div>
     </div>
   </section>
