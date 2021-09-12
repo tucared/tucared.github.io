@@ -1,7 +1,9 @@
 export default {
     modules: ['@nuxt/content'],
+    buildModules: ['@nuxtjs/tailwindcss'],
     target: 'static', // default is 'server'
-    css: ['~/assets/css/main.css'],
+    // To be deleted
+    // css: ['~/assets/css/main.css'],
     head: {
         link: [
             {
