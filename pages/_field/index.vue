@@ -19,10 +19,9 @@
 export default {
   async asyncData({ $content, params, error }) {
     try {
-      const slug = params.slug; // When calling /abc the slug will be "abc"
-      console.log(params);
+      const field = params.field;
       const projects = await $content("projects")
-        .where({ category: "archi" })
+        .where({ category: field })
         .only(["title", "description", "slug"])
         .sortBy("createdAt", "asc")
         .fetch();
