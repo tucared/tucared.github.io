@@ -4,7 +4,7 @@
     <h1>YiooYo</h1>
     <ul>
       <li v-for="project of projects" :key="project.slug">
-        <NuxtLink :to="`archi/${project.slug}`">
+        <NuxtLink :to="`${field}/${project.slug}`">
           <div>
             <h2>{{ project.title }}</h2>
             <p>{{ project.description }}</p>
@@ -26,7 +26,7 @@ export default {
         .sortBy("createdAt", "asc")
         .fetch();
 
-      return { projects };
+      return { projects, field };
     } catch (err) {
       error({
         statusCode: 404,
