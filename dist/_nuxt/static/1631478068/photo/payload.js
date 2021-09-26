@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/photo", {data:[{projects:[{slug:"corpo-cerrado",description:"A competition of photo",title:"Corpo Cerrado"},{slug:"descubra-se",description:"Helping women know themselves",title:"Descubra-se"}],field:"photo"}],fetch:{},mutations:void 0});

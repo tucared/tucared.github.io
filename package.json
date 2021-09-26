@@ -8,6 +8,7 @@
         "deploy": "gh-pages -d dist --dotfiles"
     },
     "dependencies": {
+        "@nuxtjs/sitemap": "^2.4.0",
         "nuxt": "^2.15.4"
     },
     "devDependencies": {

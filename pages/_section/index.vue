@@ -1,13 +1,19 @@
 
 <template>
-  <div>
-    <h1>{{ section.sectionTitle }}</h1>
+  <div class="h-screen min-w-full container flex flex-col p-10 bg-terciary">
+    <h1 class="text-xl p-10 font-bold justify-start">
+      {{ section.sectionTitle }}
+    </h1>
     <ul>
-      <li v-for="project of projects" :key="project.slug">
+      <li class="p-3" v-for="project of projects" :key="project.slug">
         <NuxtLink :to="`${section.slug}/${project.slug}`">
           <div>
+            <img
+              v-if="project.img"
+              class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+              :src="project.img"
+            />
             <h2>{{ project.title }}</h2>
-            <p>{{ project.shortDescription }}</p>
           </div>
         </NuxtLink>
       </li>
@@ -26,7 +32,7 @@ export default {
 
       const projects = await $content("projects")
         .where({ section: params.section })
-        .only(["title", "shortDescription", "slug"])
+        .only(["title", "img", "slug"])
         .sortBy("createdAt", "asc")
         .fetch();
 

@@ -1,7 +1,8 @@
 ---
 title: Home kitchen
 section: archi
-shortDescription: Interior architecture executive project
+img: /images/image3.png
+alt: a plan
 ---
 
 Hello tout le monde !

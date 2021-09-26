@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/photo/corpo-cerrado", {data:[{title:"Corpo Cerrado",description:"A competition of photo"}],fetch:{},mutations:void 0});

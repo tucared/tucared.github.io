@@ -1,7 +1,8 @@
 ---
 title: Corpo Cerrado
 section: photo
-shortDescription: A competition of photo
+img: /images/dance1.jpg
+alt: a photo
 ---
 
 Hello tout le monde !
