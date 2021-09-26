@@ -30,12 +30,12 @@
       <div
         id="landing-links-container"
         class="px-8 py-10 text-3xl text-primary"
-        v-for="field of fields"
-        :key="field.slug"
+        v-for="section of sections"
+        :key="section.slug"
       >
         <div class="hover:text-secondary">
-          <NuxtLink :to="`${field.slug}`">{{
-            field.landing.toUpperCase()
+          <NuxtLink :to="`${section.slug}`">{{
+            section.landingTitle.toUpperCase()
           }}</NuxtLink>
         </div>
       </div>
@@ -46,8 +46,10 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const fields = await $content("fields", params.slug).fetch();
-    return { fields };
+    const sections = await $content("sections", params.slug)
+      .only(["landingTitle", "slug"])
+      .fetch();
+    return { sections };
   },
 };
 </script>

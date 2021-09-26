@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ this.title }}</h1>
-    <p>{{ this.description }}</p>
+    <p>{{ this.shortDescription }}</p>
   </div>
 </template>
 
@@ -12,10 +12,10 @@ export default {
       const [project] = await $content("projects", params.slug)
         .where({ slug: params.project })
         .fetch();
-
       const title = project.title;
-      const description = project.description;
-      return { title, description };
+      const shortDescription = project.shortDescription;
+
+      return { title, shortDescription };
     } catch (err) {
       error({
         statusCode: 404,

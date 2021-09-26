@@ -1,7 +1,7 @@
 ---
-title : Corpo Cerrado
-category : photo
-description: A competition of photo
+title: Corpo Cerrado
+section: photo
+shortDescription: A competition of photo
 ---
 
 Hello tout le monde !
