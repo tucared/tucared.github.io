@@ -4,9 +4,9 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _043ac2ff = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _6fc6b04e = () => interopDefault(import('..\\pages\\_section\\index.vue' /* webpackChunkName: "pages/_section/index" */))
-const _5e6210ba = () => interopDefault(import('..\\pages\\_section\\_project.vue' /* webpackChunkName: "pages/_section/_project" */))
+const _4e923668 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _3072a534 = () => interopDefault(import('..\\pages\\_section\\index.vue' /* webpackChunkName: "pages/_section/index" */))
+const _c92a2a14 = () => interopDefault(import('..\\pages\\_section\\_project.vue' /* webpackChunkName: "pages/_section/_project" */))
 
 const emptyFn = () => {}
 
@@ -21,15 +21,15 @@ export const routerOptions = {
 
   routes: [{
     path: "/",
-    component: _043ac2ff,
+    component: _4e923668,
     name: "index"
   }, {
     path: "/:section",
-    component: _6fc6b04e,
+    component: _3072a534,
     name: "section"
   }, {
     path: "/:section/:project",
-    component: _5e6210ba,
+    component: _c92a2a14,
     name: "section-project"
   }],
 

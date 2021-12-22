@@ -12,8 +12,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_pluginclient_6022f176 from 'nuxt_plugin_pluginclient_6022f176' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_74473a04 from 'nuxt_plugin_pluginserver_74473a04' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_pluginclient_01663d05 from 'nuxt_plugin_pluginclient_01663d05' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_671fae8d from 'nuxt_plugin_pluginserver_671fae8d' // Source: .\\content\\plugin.server.js (mode: 'server')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -177,12 +177,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_pluginclient_6022f176 === 'function') {
-    await nuxt_plugin_pluginclient_6022f176(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_01663d05 === 'function') {
+    await nuxt_plugin_pluginclient_01663d05(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_74473a04 === 'function') {
-    await nuxt_plugin_pluginserver_74473a04(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_671fae8d === 'function') {
+    await nuxt_plugin_pluginserver_671fae8d(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -194,7 +194,14 @@ async function createApp(ssrContext, config = {}) {
 
   // Wait for async component to be resolved first
   await new Promise((resolve, reject) => {
-    router.push(app.context.route.fullPath, resolve, (err) => {
+    // Ignore 404s rather than blindly replacing URL in browser
+    if (process.client) {
+      const { route } = router.resolve(app.context.route.fullPath)
+      if (!route.matched.length) {
+        return resolve()
+      }
+    }
+    router.replace(app.context.route.fullPath, resolve, (err) => {
       // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
       if (!err._isRouter) return reject(err)
       if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()

@@ -2,22 +2,22 @@
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_043ac2ff"
+    "_name": "_4e923668"
   },
   {
     "name": "section",
     "path": "/:section",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\_section\\\\index.vue",
+    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_section\\\\index.vue",
     "chunkName": "pages/_section/index",
-    "_name": "_6fc6b04e"
+    "_name": "_3072a534"
   },
   {
     "name": "section-project",
     "path": "/:section/:project",
-    "component": "C:\\\\Users\\\\Max\\\\Documents\\\\99 - Misc\\\\6 - Github\\\\sites\\\\tucared.github.io\\\\pages\\\\_section\\\\_project.vue",
+    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_section\\\\_project.vue",
     "chunkName": "pages/_section/_project",
-    "_name": "_5e6210ba"
+    "_name": "_c92a2a14"
   }
 ]

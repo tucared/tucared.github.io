@@ -8,8 +8,9 @@
         "deploy": "gh-pages -d dist --dotfiles"
     },
     "dependencies": {
+        "@nuxt/content": "^1.15.1",
         "@nuxtjs/sitemap": "^2.4.0",
-        "nuxt": "^2.15.4"
+        "nuxt": "^2.2.0"
     },
     "devDependencies": {
         "@nuxtjs/tailwindcss": "^4.2.1",
