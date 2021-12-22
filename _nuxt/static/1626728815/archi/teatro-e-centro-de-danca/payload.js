@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/archi/teatro-e-centro-de-danca", {data:[{title:"Teatro & Centro da Dança",description:"That one TCC project"}],fetch:{},mutations:void 0});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/archi/home-kitchen", {data:[{title:"Home kitchen",description:"Interior architecture executive project"}],fetch:{},mutations:void 0});

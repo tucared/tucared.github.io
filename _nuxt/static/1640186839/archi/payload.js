@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/archi", {data:[{section:{slug:"archi",sectionTitle:"Projects Architecture"},projects:[{slug:"home-kitchen",title:"Home kitchen",img:"\u002Fimages\u002Fimage3.png"},{slug:"teatro-e-centro-de-danca",title:"Teatro & Centro da Dança",img:"\u002Fimages\u002Fimage4.png"}]}],fetch:{},mutations:void 0});
