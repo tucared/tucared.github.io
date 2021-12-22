@@ -1,9 +1,13 @@
 const main_base_URL = 'https://clarissa.studio';
+import getRoutes from "./utils/getRoutes";
 
 export default {
-    modules: ['@nuxt/content'],
+    modules: [
+        '@nuxt/content',
+        '@nuxtjs/sitemap'
+    ],
     buildModules: ['@nuxtjs/tailwindcss'],
-    target: 'static', // default is 'server'
+    target: 'static',
     head: {
         link: [
             {
@@ -12,5 +16,14 @@ export default {
             }
         ]
     },
-    build: {}
+    build: {},
+    env: {
+        main_base_URL
+    },
+    sitemap: {
+        hostname: main_base_URL,
+        routes() {
+            return getRoutes();
+        },
+    }
 }

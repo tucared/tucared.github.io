@@ -4,20 +4,18 @@
     "path": "/",
     "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_4e923668"
+    "url": "/"
   },
   {
     "name": "section",
     "path": "/:section",
     "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_section\\\\index.vue",
-    "chunkName": "pages/_section/index",
-    "_name": "_3072a534"
+    "chunkName": "pages/_section/index"
   },
   {
     "name": "section-project",
     "path": "/:section/:project",
     "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_section\\\\_project.vue",
-    "chunkName": "pages/_section/_project",
-    "_name": "_c92a2a14"
+    "chunkName": "pages/_section/_project"
   }
 ]

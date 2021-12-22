@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/photo/corpo-cerrado", {data:[{project:{title:"Corpo Cerrado",img:"\u002Fimages\u002Fdance1.jpg",alt:"a photo"}}],fetch:{},mutations:void 0});

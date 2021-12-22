@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {}
+      env: {"main_base_URL":"https://clarissa.studio"}
     }
     // Only set once
 
