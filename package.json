@@ -5,26 +5,36 @@
         "build": "nuxt build",
         "generate": "nuxt generate",
         "start": "nuxt start",
-        "deploy": "gh-pages -d dist --dotfiles"
+        "deploy": "gh-pages -d dist --dotfiles",
+        "preinstall": "npx npm-force-resolutions",
+        "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
+    },
+    "resolutions": {
+        "glob-parent": "^6.0.1"
     },
     "dependencies": {
-        "@nuxt/content": "^1.15.1",
-        "@nuxtjs/sitemap": "^2.4.0",
-        "gh-pages": "^3.2.3",
-        "nuxt": "^2.2.0"
+        "@nuxt/content": "*",
+        "@nuxtjs/sitemap": "*",
+        "gh-pages": "*",
+        "npm-force-resolutions": "^0.0.10",
+        "watchpack": "^2.3.1"
     },
     "devDependencies": {
-        "@nuxtjs/tailwindcss": "^4.2.1",
-        "autoprefixer": "^10.3.4",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^7.32.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-loader": "^4.0.2",
-        "eslint-plugin-nuxt": "^2.0.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-vue": "^7.17.0",
-        "postcss": "^8.3.6",
-        "prettier": "^2.4.0",
-        "tailwindcss": "^2.2.15"
+        "@nuxtjs/tailwindcss": "*",
+        "autoprefixer": "*",
+        "babel-eslint": "*",
+        "chokidar": "*",
+        "eslint": "*",
+        "eslint-config-prettier": "*",
+        "eslint-loader": "*",
+        "eslint-plugin-nuxt": "*",
+        "eslint-plugin-prettier": "*",
+        "eslint-plugin-vue": "*",
+        "glob-parent": "*",
+        "nth-check": "*",
+        "nuxt": "*",
+        "postcss": "*",
+        "prettier": "*",
+        "tailwindcss": "*"
     }
 }
