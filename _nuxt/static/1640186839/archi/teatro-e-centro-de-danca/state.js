@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1640186839",layout:"default",error:a,serverRendered:true,routePath:"\u002Farchi\u002Fteatro-e-centro-de-danca",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"f278a38e"}}}}(null));
