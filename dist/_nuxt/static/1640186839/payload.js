@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{sections:[{slug:"archi",landingTitle:"Architecture"},{slug:"photo",landingTitle:"Photography"}]}],fetch:{},mutations:void 0});

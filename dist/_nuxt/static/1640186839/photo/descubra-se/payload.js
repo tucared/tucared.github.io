@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/photo/descubra-se", {data:[{project:{title:"Descubra-se",img:"\u002Fimages\u002Fimage1.png",alt:"a photo"}}],fetch:{},mutations:void 0});

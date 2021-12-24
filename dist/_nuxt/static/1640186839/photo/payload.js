@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/photo", {data:[{section:{slug:"photo",sectionTitle:"Projects Photography"},projects:[{slug:"corpo-cerrado",title:"Corpo Cerrado",img:"\u002Fimages\u002Fdance1.jpg"},{slug:"descubra-se",title:"Descubra-se",img:"\u002Fimages\u002Fimage1.png"}]}],fetch:{},mutations:void 0});
