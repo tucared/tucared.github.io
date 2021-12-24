@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/interior", {data:[{theme:{slug:"interior",title:"Interior Architecture"},projects:[{slug:"home-kitchen",title:"Home kitchen",img:"\u002Fimages\u002Fimage3.png"}]}],fetch:{},mutations:void 0});
