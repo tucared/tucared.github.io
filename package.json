@@ -6,22 +6,17 @@
         "generate": "nuxt generate",
         "start": "nuxt start",
         "deploy": "gh-pages -d dist --dotfiles",
-        "preinstall": "npx npm-force-resolutions",
         "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
-    },
-    "resolutions": {
-        "glob-parent": "^6.0.1"
     },
     "dependencies": {
         "@nuxt/content": "*",
         "@nuxtjs/sitemap": "*",
         "gh-pages": "*",
-        "npm-force-resolutions": "^0.0.10",
-        "watchpack": "^2.3.1"
+        "watchpack": "*"
     },
     "devDependencies": {
         "@nuxtjs/tailwindcss": "*",
-        "autoprefixer": "*",
+        "autoprefixer": "^10.4.0",
         "babel-eslint": "*",
         "chokidar": "*",
         "eslint": "*",
@@ -33,8 +28,8 @@
         "glob-parent": "*",
         "nth-check": "*",
         "nuxt": "*",
-        "postcss": "*",
+        "postcss": "^8.4.5",
         "prettier": "*",
-        "tailwindcss": "*"
+        "tailwindcss": "^3.0.7"
     }
 }
