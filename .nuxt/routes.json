@@ -7,15 +7,15 @@
     "url": "/"
   },
   {
-    "name": "section",
-    "path": "/:section",
-    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_section\\\\index.vue",
-    "chunkName": "pages/_section/index"
+    "name": "theme",
+    "path": "/:theme",
+    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_theme\\\\index.vue",
+    "chunkName": "pages/_theme/index"
   },
   {
-    "name": "section-project",
-    "path": "/:section/:project",
-    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_section\\\\_project.vue",
-    "chunkName": "pages/_section/_project"
+    "name": "theme-project",
+    "path": "/:theme/:project",
+    "component": "C:\\\\Users\\\\max\\\\Documents\\\\tucared.github.io\\\\pages\\\\_theme\\\\_project.vue",
+    "chunkName": "pages/_theme/_project"
   }
 ]

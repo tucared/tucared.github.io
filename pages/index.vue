@@ -1,5 +1,5 @@
 <template>
-  <section
+  <theme
     class="
       h-screen
       min-w-full
@@ -30,26 +30,24 @@
       <div
         id="landing-links-container"
         class="px-8 py-10 text-3xl text-primary"
-        v-for="section of sections"
-        :key="section.slug"
+        v-for="theme of themes"
+        :key="theme.slug"
       >
         <div class="hover:text-secondary">
-          <NuxtLink :to="`${section.slug}`">{{
-            section.landingTitle.toUpperCase()
+          <NuxtLink :to="`${theme.slug}`">{{
+            theme.title.toUpperCase()
           }}</NuxtLink>
         </div>
       </div>
     </div>
-  </section>
+  </theme>
 </template>
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const sections = await $content("sections", params.slug)
-      .only(["landingTitle", "slug"])
-      .fetch();
-    return { sections };
+  async asyncData({ $content }) {
+    const themes = await $content().sortBy("landingOrder").fetch();
+    return { themes };
   },
 };
 </script>
