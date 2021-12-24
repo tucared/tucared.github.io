@@ -1,6 +1,6 @@
 
 <template>
-  <div class="h-screen min-w-full container flex flex-col p-10 bg-terciary">
+  <div class="min-w-full container flex flex-col p-10 bg-terciary">
     <h1 class="text-xl p-10 font-bold justify-start">
       {{ theme.title }}
     </h1>
