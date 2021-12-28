@@ -5,8 +5,7 @@
         "build": "nuxt build",
         "generate": "nuxt generate",
         "start": "nuxt start",
-        "deploy": "gh-pages -d dist --dotfiles",
-        "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
+        "deploy": "gh-pages -d dist --dotfiles"
     },
     "dependencies": {
         "@nuxt/content": "*",
