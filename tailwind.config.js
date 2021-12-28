@@ -14,8 +14,5 @@ module.exports = {
       terciary: '#DDC5B9'
     }
   },
-  plugins: [],
-  "tailwindcss.lint": {
-    "tailwindCSS.validate": "warning"
-  }
+  plugins: []
 }
