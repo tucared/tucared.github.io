@@ -36,7 +36,7 @@ export default {
         .only(["title", "slug"])
         .fetch();
 
-      const projects = await $content(params.theme)
+      const projects = await $content("projects", { deep: true })
         .only(["title", "img", "slug"])
         .sortBy("createdAt", "asc")
         .fetch();
