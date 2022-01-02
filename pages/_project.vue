@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h1>{{ project.title }}</h1>
-    <img :src="project.img" :alt="this.alt" />
-  </div>
+  <theme class="h-screen min-w-full container flex bg-secondary">
+    <div>
+      <h1>{{ project.title }}</h1>
+      <img :src="project.img" :alt="this.alt" />
+    </div>
+  </theme>
 </template>
 
 <script>
