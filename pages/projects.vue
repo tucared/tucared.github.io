@@ -27,6 +27,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Clarissa Aburachid's Projects",
+    };
+  },
   async asyncData({ $content, params, error }) {
     try {
       // Will be used for filtering later
