@@ -9,6 +9,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.project.title,
+    };
+  },
   async asyncData({ $content, params, error }) {
     try {
       const [project] = await $content()
