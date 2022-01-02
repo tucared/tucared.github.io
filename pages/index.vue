@@ -4,7 +4,7 @@
       h-screen
       min-w-full
       container
-      flex flex-col
+      flex
       items-center
       justify-center
       py-20
@@ -12,12 +12,12 @@
       bg-terciary
     "
   >
-    <div id="maintenance-banner" class="flex-1 h-32 items-center flex">
-      <h1 class="text-primary text-4xl lg:text-2xl font-semibold uppercase">
+    <div id="maintenance-banner" class="absolute h-32 top-0 items-center flex">
+      <h1 class="text-primary text-3xl font-semibold uppercase">
         Website in maintenance
       </h1>
     </div>
-    <div id="logo-container" class="flex-initial">
+    <div id="logo-container">
       <nuxt-link
         tag="img"
         :src="require('~/assets/img/logo.png')"
@@ -25,20 +25,6 @@
         to="/interior"
       >
       </nuxt-link>
-    </div>
-    <div
-      class="flex-1 h-32 items-center justify-center flex flex-col lg:flex-row"
-    >
-      <div
-        id="landing-links-container"
-        class="px-8 py-10 text-3xl text-primary"
-        v-for="theme of themes"
-        :key="theme.slug"
-      >
-        <div class="hover:text-secondary">
-          <NuxtLink :to="`interior`">{{ theme.title.toUpperCase() }}</NuxtLink>
-        </div>
-      </div>
     </div>
   </theme>
 </template>
