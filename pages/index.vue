@@ -34,9 +34,7 @@
         :key="theme.slug"
       >
         <div class="hover:text-secondary">
-          <NuxtLink :to="`${theme.slug}`">{{
-            theme.title.toUpperCase()
-          }}</NuxtLink>
+          <NuxtLink :to="`interior`">{{ theme.title.toUpperCase() }}</NuxtLink>
         </div>
       </div>
     </div>
