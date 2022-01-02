@@ -18,11 +18,13 @@
       </h1>
     </div>
     <div id="logo-container" class="flex-initial">
-      <img
-        id="logo"
-        src="~/assets/img/logo.png"
+      <nuxt-link
+        tag="img"
+        :src="require('~/assets/img/logo.png')"
         class="object-scale-down object-center h-96"
-      />
+        to="/interior"
+      >
+      </nuxt-link>
     </div>
     <div
       class="flex-1 h-32 items-center justify-center flex flex-col lg:flex-row"
