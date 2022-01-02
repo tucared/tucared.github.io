@@ -31,6 +31,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Clarissa Aburachid",
+    };
+  },
   async asyncData({ $content }) {
     const themes = await $content().sortBy("landingOrder").fetch();
     return { themes };
