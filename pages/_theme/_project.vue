@@ -9,7 +9,7 @@
 export default {
   async asyncData({ $content, params, error }) {
     try {
-      const [project] = await $content(params.theme, params.slug)
+      const [project] = await $content("projects", { deep: true })
         .where({ slug: params.project })
         .only(["title", "img", "alt"])
         .fetch();
