@@ -35,7 +35,7 @@ export default {
         .only(["title", "slug"])
         .fetch();
 
-      const projects = await $content("projects", { deep: true })
+      const projects = await $content()
         .only(["title", "img", "slug"])
         .sortBy("createdAt", "asc")
         .fetch();
