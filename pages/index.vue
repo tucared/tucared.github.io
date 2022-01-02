@@ -22,7 +22,7 @@
         tag="img"
         :src="require('~/assets/img/logo.png')"
         class="object-scale-down object-center h-96"
-        to="/interior"
+        to="/projects"
       >
       </nuxt-link>
     </div>
