@@ -1,0 +1,51 @@
+body {
+    background-color: #DDC5B9;
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+    color: #BD5927;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#maintenance-banner h1 {
+    position: absolute;
+    margin-left: 7%;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    max-height: 65vh;
+    max-width: 70vw;
+}
+
+#landing-links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-link {
+    margin: 0 3em;
+    font-size: 32px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #c79984;
+}
