@@ -1,3 +1,18 @@
+<script setup>
+// const { data } = await useAsyncData('projects',
+//   () => queryContent('site')
+//     .only(['category'])
+//     .sort("category")
+//     .find()
+// )
+
+const { projects } = await useAsyncData('projects',
+  () => queryContent('site')
+    .only(["title", "img", "slug"])
+    .sort("createdAt", "asc")
+    .find()
+)
+</script>
 
 <template>
   <div
@@ -6,7 +21,20 @@
     <div>
       <h1 class="text-xl p-10 font-bold justify-start">Projects</h1>
     </div>
-    <div>
+
+     <!-- <pre>{{ projects }}</pre> -->
+
+    <section aria-labelledby="projects">
+      <NuxtLink to="/projects">
+        <AppSubtitle id="projects">
+          Recent projects
+        </AppSubtitle>
+      </NuxtLink>
+
+      <VideoList v-if="projects !== null" :list="projects" />
+    </section>
+
+    <!-- <div>
       <ul class="columns-3xs">
         <li
           class="p-3 w-full break-inside-avoid"
@@ -21,7 +49,7 @@
           </NuxtLink>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -32,26 +60,26 @@ export default {
       title: "Clarissa Aburachid's Projects",
     };
   },
-  async asyncData({ $content, params, error }) {
-    try {
-      // Will be used for filtering later
-      const [theme] = await $content(params.slug)
-        .where({ slug: params.theme })
-        .only(["title", "slug"])
-        .fetch();
+  // async asyncData({ $content, params, error }) {
+  //   try {
+  //     // Will be used for filtering later
+  //     const [theme] = await $content(params.slug)
+  //       .where({ slug: params.theme })
+  //       .only(["title", "slug"])
+  //       .fetch();
 
-      const projects = await $content()
-        .only(["title", "img", "slug"])
-        .sortBy("createdAt", "asc")
-        .fetch();
+  //     const projects = await $content()
+  //       .only(["title", "img", "slug"])
+  //       .sortBy("createdAt", "asc")
+  //       .fetch();
 
-      return { theme, projects };
-    } catch (err) {
-      error({
-        statusCode: 404,
-        message: "Theme could not be found",
-      });
-    }
-  },
+  //     return { theme, projects };
+  //   } catch (err) {
+  //     error({
+  //       statusCode: 404,
+  //       message: "Theme could not be found",
+  //     });
+  //   }
+  // },
 };
 </script>

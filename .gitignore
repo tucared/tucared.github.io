@@ -1,8 +1,8 @@
-# Nuxt dev/build outputs
-.output
-.nuxt
-.vscode
-# Node dependencies
 node_modules
-# System files
-*.log
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

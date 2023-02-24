@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/photography", {data:[{theme:{slug:"photography",title:"Photography"},projects:[{slug:"descubra-se",title:"Descubra-se",img:"\u002Fimages\u002Fimage1.png"},{slug:"corpo-cerrado",title:"Corpo Cerrado",img:"\u002Fimages\u002Fdance1.jpg"}]}],fetch:{},mutations:void 0});
